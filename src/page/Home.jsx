@@ -20,7 +20,7 @@ const Home = () => {
       </div>
       <div className="footer">
         <Link to={"/map"}>
-          WE ARE HERE <img src={map} alt="map" />
+          WE ARE HERE <img className="map" src={map} alt="map" />
         </Link>
       </div>
     </div>
