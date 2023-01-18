@@ -11,7 +11,12 @@ function App() {
       <Route
         path="/"
         element={
-          <Layout>
+          <Layout
+            nameOne={"exaggerate-header"}
+            nameTwo={"exaggerate-img"}
+            nameTree={"exaggerate"}
+            vision={false}
+          >
             <Home />
           </Layout>
         }

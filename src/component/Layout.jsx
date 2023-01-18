@@ -33,7 +33,6 @@ const Layout = ({ children, nameOne, nameTwo, nameTree, vision }) => {
             </a>
           </div>
         </div>
-
       </header>
       <nav className="mobile" style={{ animationName: nameOne }}>
         <div className="mobile-container">
@@ -60,7 +59,10 @@ const Layout = ({ children, nameOne, nameTwo, nameTree, vision }) => {
         {vision ? (
           ""
         ) : (
-          <Link className="book" to={"/recording"}>
+          <Link
+            className="book"
+            to={"/recording"}
+          >
             <p>BOOK</p>
             <span>now</span>
           </Link>
