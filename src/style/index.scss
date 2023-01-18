@@ -1,0 +1,289 @@
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../assets/font/SF-Pro-Display-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Segoe Print";
+  src: url("../assets/font/segoeprint.ttf") format("opentype");
+}
+
+* {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pk {
+  position: relative;
+  z-index: 33;
+  height: 162px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(184, 107, 136, 1) 60%,
+    rgba(250, 147, 187, 1) 100%
+  );
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  .container {
+    position: relative;
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    .logo {
+      width: fit-content;
+      img {
+        height: 145px;
+        width: 145px;
+      }
+    }
+    .book-now {
+      width: 100px;
+      position: relative;
+      a {
+        z-index: 33;
+        display: block;
+        position: relative;
+        margin-top: 99px;
+        display: flex;
+        flex-direction: column;
+        color: #803c55;
+        &:hover {
+          color: #ab7c8b;
+        }
+        text-decoration: none;
+        p {
+          font-size: 30px;
+          font-family: "SFProDisplay";
+          font-weight: bold;
+        }
+
+        span {
+          margin-top: -8px;
+          margin-right: 5px;
+          text-align: right;
+          font-weight: 800;
+          font-size: 14px;
+        }
+      }
+    }
+    .link {
+      display: flex;
+      flex-direction: column;
+      a {
+        cursor: pointer;
+        img {
+          width: 34px;
+          height: 34px;
+        }
+      }
+    }
+  }
+}
+.mobile {
+  display: none;
+  position: relative;
+  z-index: 22;
+  padding-top: 20px;
+  height: 310px;
+  border-bottom: 1px solid white;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(184, 107, 136, 1) 60%,
+    rgba(250, 147, 187, 1) 100%
+  );
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  .book {
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-15%, 0%);
+    font-family: "SFProDisplay";
+    color: rgb(143, 57, 103);
+
+    p {
+      font-weight: bold;
+      font-size: 35px;
+    }
+    span {
+      width: 100%;
+      font-weight: bold;
+      font-size: 15px;
+      margin-top: -10px;
+      margin-left: 85px;
+    }
+  }
+  &-container {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    a {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .logo-mobile {
+      position: absolute;
+      top: 90px;
+      img {
+        width: 140px;
+        height: 140px;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+      }
+      animation-duration: 0.75s;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+@keyframes decrease {
+  0% {
+    position: relative;
+    top: 90px;
+  }
+  25% {
+    position: relative;
+    top: 40px;
+  }
+
+  50% {
+    position: relative;
+    top: 30px;
+  }
+  100% {
+    position: relative;
+    top: 0;
+  }
+}
+@keyframes decrease-img {
+  0% {
+    height: 140px;
+    width: 140px;
+  }
+  100% {
+    height: 50px;
+    width: 50px;
+  }
+}
+@keyframes decrease-header {
+  0% {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(184, 107, 136, 1) 60%,
+      rgba(250, 147, 187, 1) 100%
+    );
+    height: 310px;
+  }
+  50% {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgb(182, 141, 156) 60%,
+      rgb(133, 104, 115) 100%
+    );
+  }
+  75% {
+    background: black;
+  }
+  100% {
+    background: black;
+    height: 90px;
+  }
+}
+
+.content {
+  position: relative;
+  height: calc(100vh - 162px);
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  .iframe {
+    display: block;
+    margin-top: 0;
+    border: none;
+    height: 100%;
+    width: 100%;
+  }
+  .wraper_wellcome {
+    width: fit-content;
+    margin: 0 auto;
+    color: rgb(143, 57, 103);
+    .text {
+      position: relative;
+      z-index: 22;
+      padding: 0;
+      margin: 0;
+      line-height: normal;
+      text-align: left;
+      font-family: Segoe Print;
+    }
+    .mt {
+      position: relative;
+      z-index: 22;
+      margin-top: 20px;
+    }
+    .pt {
+      padding-top: 20px;
+    }
+  }
+  .cate {
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    opacity: 10%;
+    z-index: 1;
+    background-image: url(../assets//image/paw.svg);
+    background-repeat: round;
+    transform: rotate(45deg);
+  }
+  .footer {
+    position: fixed;
+    z-index: 5;
+    bottom: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    a {
+      font-family: "SFProDisplay";
+      color: rgb(143, 57, 103);
+      text-decoration: none;
+    }
+    img {
+      position: relative;
+      top: 6px;
+      width: 34px;
+      height: 44px;
+    }
+  }
+}
+@media (max-width: 720px) {
+  .pk {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
