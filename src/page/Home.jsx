@@ -1,7 +1,6 @@
 import React from "react";
 import "../style/index.scss";
 import { Link } from "react-router-dom";
-import map from "../assets/image/position.svg";
 import Layout from "../component/Layout";
 
 const Home = () => {
@@ -17,7 +16,7 @@ const Home = () => {
         bookanime={"booksanime"}
         menuAnime={"exaggerateMenu"}
       />
-      <div className="content">
+      <div className="content content_mb">
         <div className="black">
           <div className="cate_wraper">
             <div className="wraper_wellcome">
