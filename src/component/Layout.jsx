@@ -31,13 +31,22 @@ const Layout = ({
             </Link>
           </div>
           <div className="link">
-            <a href="https://www.facebook.com/profile.php?id=100089697782103&mibextid=LQQJ4d">
+            <a
+              style={{ height: "50px" }}
+              href="https://www.facebook.com/profile.php?id=100089697782103&mibextid=LQQJ4d"
+            >
               <img src={facebook} alt="" />
             </a>
-            <a href="https://www.instagram.com/nails_antalya_hurma/?igshid=YmMyMTA2M2Y%3D">
+            <a
+              style={{ height: "50px" }}
+              href="https://www.instagram.com/nails_antalya_hurma/?igshid=YmMyMTA2M2Y%3D"
+            >
               <img src={instagram} alt="" />
             </a>
-            <a href="https://www.tiktok.com/@kt_nails?_t=8Z1oQBUP2BR&_r=1">
+            <a
+              style={{ height: "50px" }}
+              href="https://www.tiktok.com/@kt_nails?_t=8Z1oQBUP2BR&_r=1"
+            >
               <img src={tiktok} alt="" />
             </a>
           </div>

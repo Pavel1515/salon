@@ -3,7 +3,9 @@ import React from "react";
 const Iframe = () => {
   return (
     <>
-      <div style={{ color: "white" }}>iframe</div>
+      <div className="form" style={{ color: "white", transition: "all 1s" }}>
+        iframe
+      </div>
     </>
   );
 };

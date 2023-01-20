@@ -1,235 +1,229 @@
-
 @keyframes decreaseHeader {
-    0% {
-      background: rgb(0, 0, 0);
-      background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(184, 107, 136, 1) 60%,
-        rgba(250, 147, 187, 1) 100%
-      );
-      height: 310px;
-    }
-    50% {
-      background: rgb(0, 0, 0);
-      background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgb(124, 88, 102) 60%,
-        rgb(187, 125, 149) 100%
-      );
-    }
-    75% {
-      background: black;
-      background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgb(70, 58, 62) 60%,
-        rgb(83, 71, 76) 100%
-      );
-    }
-    85% {
-      background: black;
-      background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgb(49, 45, 47) 60%,
-        rgb(54, 50, 52) 100%
-      );
-    }
-    100% {
-      background: black;
-      background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgb(20, 20, 20) 60%,
-        rgb(22, 22, 22) 100%
-      );
-  
-      height: 90px;
-    }
+  0% {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(184, 107, 136, 1) 60%,
+      rgba(250, 147, 187, 1) 100%
+    );
+    height: 310px;
   }
-  @keyframes decrease {
-    0% {
-      position: absolute;
-      top: 90px;
-      left: 50%;
-      margin-left: -70px;
-    }
-    99% {
-      position: absolute;
-    }
-  
-    100% {
-      position: relative;
-      left: 0%;
-      top: 0px;
-    }
+  50% {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgb(124, 88, 102) 60%,
+      rgb(187, 125, 149) 100%
+    );
   }
-  @keyframes lies {
-    0% {
-      width: 30px;
-    }
-    15% {
-      width: 30px;
-    }
-    25% {
-      width: 50px;
-    }
-    99% {
-      width: 50px;
-      position: relative;
-    }
-    100% {
-      width: 50px;
-      position: absolute;
-    }
+  75% {
+    background: black;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgb(70, 58, 62) 60%,
+      rgb(83, 71, 76) 100%
+    );
   }
-  
-  @keyframes appearanceMenu {
-    0% {
-      position: relative;
-      opacity: 0;
-      width: 30px;
-    }
-    50% {
-      width: 30px;
-      position: relative;
-      opacity: 0;
-    }
-    100% {
-      width: 50px;
-      position: relative;
-      opacity: 1;
-    }
+  85% {
+    background: black;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgb(49, 45, 47) 60%,
+      rgb(54, 50, 52) 100%
+    );
   }
-  @keyframes decrease-img {
-    0% {
-      height: 140px;
-      width: 140px;
-    }
-    100% {
-      height: 50px;
-      width: 50px;
-    }
+  100% {
+    background: black;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgb(20, 20, 20) 60%,
+      rgb(22, 22, 22) 100%
+    );
+
+    height: 90px;
   }
-  
-  ///////////////////////
-  /// ////////////////////
-  /// ////////////////////
-  ///
-  @keyframes exaggerate-header {
-    0% {
-      background: black;
-      height: 90px;
-    }
-    10% {
-      background: black;
-    }
-    75% {
-      background: rgb(0, 0, 0);
-      background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgb(182, 141, 156) 60%,
-        rgb(133, 104, 115) 100%
-      );
-    }
-    100% {
-      background: rgb(0, 0, 0);
-      background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(184, 107, 136, 1) 60%,
-        rgba(250, 147, 187, 1) 100%
-      );
-      height: 310px;
-    }
+}
+@keyframes decrease {
+  0% {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    margin-left: -70px;
   }
-  @keyframes exaggerate-lies {
-    0% {
-      z-index: -1;
-      position: absolute;
-    }
-    14.9% {
-      position: absolute;
-    }
-    15% {
-      position: relative;
-      width: 50px;
-    }
-    100% {
-      width: 30px;
-      position: relative;
-    }
+  99% {
+    position: absolute;
   }
-  
-  @keyframes exaggerateMenu {
-    0% {
-      width: 50px;
-      opacity: 1;
-    }
-    15% {
-      width: 50px;
-      opacity: 0;
-    }
-    100% {
-      width: 30px;
-      opacity: 0;
-    }
+
+  100% {
+    position: relative;
+    left: 0%;
+    top: 0px;
   }
-  
-  @keyframes exaggerate-img {
-    0% {
-      height: 50px;
-      width: 50px;
-    }
-    100% {
-      height: 140px;
-      width: 140px;
-    }
+}
+@keyframes lies {
+  0% {
+    width: 30px;
   }
-  @keyframes exaggerate {
-    0% {
-      z-index: 150;
-      position: relative;
-      top: 0;
-      left: 0;
-    }
-    14.9% {
-      position: relative;
-    }
-    15% {
-      position: absolute;
-    }
-    100% {
-      position: absolute;
-      top: 90px;
-      left: 50%;
-      margin-left: -70px;
-    }
+  15% {
+    width: 30px;
   }
-  @keyframes booksanime {
-    0% {
-      opacity: 0;
-    }
-    99% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  25% {
+    width: 50px;
   }
-  // @keyframes opasitiText {
-  //   0% {
-  //     position: relative;
-  //     background-color: red;
-  //     z-index: 999;
-  //   }
-  //   100% {
-  //     position: relative;
-  //     background-color: red;
-  //     z-index: 999;
-  //   }
-  // }
-  
+  99% {
+    width: 50px;
+    position: relative;
+  }
+  100% {
+    width: 50px;
+    position: absolute;
+  }
+}
+
+@keyframes appearanceMenu {
+  0% {
+    position: relative;
+    opacity: 0;
+    width: 30px;
+  }
+  50% {
+    width: 30px;
+    position: relative;
+    opacity: 0;
+  }
+  100% {
+    width: 50px;
+    position: relative;
+    opacity: 1;
+  }
+}
+@keyframes decrease-img {
+  0% {
+    height: 140px;
+    width: 140px;
+  }
+  100% {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+///////////////////////
+/// ////////////////////
+/// ////////////////////
+///
+@keyframes exaggerate-header {
+  0% {
+    background: black;
+    height: 90px;
+  }
+  10% {
+    background: black;
+  }
+  75% {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgb(182, 141, 156) 60%,
+      rgb(133, 104, 115) 100%
+    );
+  }
+  100% {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(184, 107, 136, 1) 60%,
+      rgba(250, 147, 187, 1) 100%
+    );
+    height: 310px;
+  }
+}
+@keyframes exaggerate-lies {
+  0% {
+    z-index: -1;
+    position: absolute;
+  }
+  14.9% {
+    position: absolute;
+  }
+  15% {
+    position: relative;
+    width: 50px;
+  }
+  100% {
+    width: 30px;
+    position: relative;
+  }
+}
+
+@keyframes exaggerateMenu {
+  0% {
+    width: 50px;
+    opacity: 1;
+  }
+  15% {
+    width: 50px;
+    opacity: 0;
+  }
+  100% {
+    width: 30px;
+    opacity: 0;
+  }
+}
+
+@keyframes exaggerate-img {
+  0% {
+    height: 50px;
+    width: 50px;
+  }
+  100% {
+    height: 140px;
+    width: 140px;
+  }
+}
+@keyframes exaggerate {
+  0% {
+    z-index: 150;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  14.9% {
+    position: relative;
+  }
+  15% {
+    position: absolute;
+  }
+  100% {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    margin-left: -70px;
+  }
+}
+@keyframes booksanime {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes contentOpasity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,161 +1,162 @@
 .pk {
-    overflow: hidden;
+  overflow: hidden;
+  position: relative;
+  z-index: 33;
+  height: 162px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(184, 107, 136, 1) 60%,
+    rgba(250, 147, 187, 1) 100%
+  );
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  .container {
     position: relative;
-    z-index: 33;
-    height: 162px;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(184, 107, 136, 1) 60%,
-      rgba(250, 147, 187, 1) 100%
-    );
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    .logo {
+      width: fit-content;
+      img {
+        height: 145px;
+        width: 145px;
+      }
+    }
+    .book-now {
+      width: 100px;
       position: relative;
-      display: flex;
-      width: 1200px;
-      margin: 0 auto;
-      justify-content: space-between;
-      .logo {
-        width: fit-content;
-        img {
-          height: 145px;
-          width: 145px;
-        }
-      }
-      .book-now {
-        width: 100px;
+      a {
+        z-index: 33;
+        display: block;
         position: relative;
-        a {
-          z-index: 33;
-          display: block;
-          position: relative;
-          margin-top: 99px;
-          display: flex;
-          flex-direction: column;
-          color: #803c55;
-          &:hover {
-            color: #ab7c8b;
-          }
-          text-decoration: none;
-          p {
-            font-size: 30px;
-            font-family: "SFProDisplay";
-            font-weight: bold;
-          }
-  
-          span {
-            margin-top: -8px;
-            margin-right: 5px;
-            text-align: right;
-            font-weight: 800;
-            font-size: 14px;
-          }
-        }
-      }
-      .link {
+        margin-top: 99px;
         display: flex;
         flex-direction: column;
-        a {
-          cursor: pointer;
-          img {
-            width: 34px;
-            height: 34px;
-          }
+        color: #803c55;
+        &:hover {
+          color: #ab7c8b;
+        }
+        text-decoration: none;
+        p {
+          font-size: 30px;
+          font-family: "SFProDisplay";
+          font-weight: bold;
+        }
+
+        span {
+          margin-top: -8px;
+          margin-right: 5px;
+          text-align: right;
+          font-weight: 800;
+          font-size: 14px;
+        }
+      }
+    }
+    .link {
+      display: flex;
+      flex-direction: column;
+      a {
+        cursor: pointer;
+        img {
+          width: 34px;
+          height: 34px;
         }
       }
     }
   }
-  .mobile {
-    overflow: hidden;
-    position: relative;
-    transform: translateZ(0);
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(184, 107, 136, 1) 60%,
-      rgba(250, 147, 187, 1) 100%
-    );
-    height: 390px;
-    width: 100%;
-    display: none;
-    z-index: 22;
-    border-bottom: 1px solid white;
-    animation-duration: 1.2s;
+}
+.mobile {
+  position: relative;
+  transform: translateZ(0);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(184, 107, 136, 1) 60%,
+    rgba(250, 147, 187, 1) 100%
+  );
+  height: 390px;
+  width: 100%;
+  display: none;
+  z-index: 22;
+  border-bottom: 1px solid white;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  .book_mb {
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    animation-timing-function: linear;
-    .book_mb {
-      animation-duration: 1.5s;
-      animation-fill-mode: forwards;
-      animation-timing-function: ease;
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      bottom: 4px;
-      width: 100%;
-      text-decoration: none;
-      font-family: "SFProDisplay";
-      color: rgb(143, 57, 103);
-      font-weight: bold;
-      p {
-        font-size: 35px;
-      }
-      span {
-        transform: translate(50px, -10px);
-        font-size: 15px;
+    animation-timing-function: ease;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 4px;
+    width: 100%;
+    text-decoration: none;
+    font-family: "SFProDisplay";
+    color: rgb(143, 57, 103);
+    font-weight: bold;
+    p {
+      font-size: 35px;
+    }
+    span {
+      transform: translate(50px, -10px);
+      font-size: 15px;
+    }
+  }
+  &-container {
+    overflow-y: hidden;
+    height: 230px;
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 1s;
+
+    a {
+      width: fit-content;
+      width: fit-content;
+      img {
+        width: 50px;
+        height: 50px;
       }
     }
-    &-container {
-      height: 230px;
-      position: relative;
-      width: 320px;
-      margin: 0 auto;
-      margin-top: 20px;
-      display: flex;
-      justify-content: space-between;
-      transition: all 1s;
-  
-      a {
-        img {
-          width: 50px;
-          height: 50px;
-        }
-      }
-      .logo-mobile {
-        transform: translateZ(0);
-        img {
-          animation-duration: 1.5s;
-          animation-fill-mode: forwards;
-          animation-timing-function: ease;
-        }
+    .logo-mobile {
+      transform: translateZ(0);
+      img {
         animation-duration: 1.5s;
         animation-fill-mode: forwards;
         animation-timing-function: ease;
       }
-      .lie {
-        display: block;
-        width: 50px;
-        height: 50px;
-        animation-duration: 1.5s;
-        animation-fill-mode: forwards;
-        animation-timing-function: linear;
-      }
-      .menu-mobile {
-        display: block;
-        right: 0;
-        opacity: 0;
-        width: 20px;
-        height: 50px;
-        animation-name: appearanceMenu;
-        animation-duration: 390ms;
-        animation-fill-mode: forwards;
-        animation-timing-function: linear;
-      }
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
+    }
+    .lie {
+      display: block;
+      width: 50px;
+      height: 50px;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+    }
+    .menu-mobile {
+      display: block;
+      right: 0;
+      opacity: 0;
+      width: 20px;
+      height: 50px;
+      animation-name: appearanceMenu;
+      animation-duration: 390ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
     }
   }
-  
+}
