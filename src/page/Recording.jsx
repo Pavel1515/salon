@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Iframe from "../component/Iframe";
 import Layout from "../component/Layout";
 import Rules from "../component/Rules";
-import "../style/index.scss";
+import "../style/index.css";
 
 const Recording = () => {
   const [active, setActive] = useState(true);

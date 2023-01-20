@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/index.scss";
+import "../style/index.css";
 import { Link } from "react-router-dom";
 import Layout from "../component/Layout";
 

@@ -50,4 +50,3 @@ const Rules = ({setActive}) => {
 
 export default Rules;
 
-//   font-family: "Segoe Print";

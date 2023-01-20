@@ -72,7 +72,11 @@ const Layout = ({
             <img src={tiktok} alt="" />
           </a>
           {vision ? (
-            <a style={{ animationName: menuAnime }} className="menu-mobile">
+            <a
+              href=""
+              style={{ animationName: menuAnime }}
+              className="menu-mobile"
+            >
               <img src={menu} alt="" />
             </a>
           ) : (
