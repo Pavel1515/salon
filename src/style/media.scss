@@ -94,7 +94,7 @@
         padding: 0;
         line-height: 22px;
         margin-top: 5px;
-        text-align: center;
+        text-align: left;
         font-family: Segoe Print;
         font-size: 20px;
       }
@@ -113,7 +113,7 @@
   .footer {
     position: static;
     margin-top: 40px;
-    .container{
+    .container {
       width: 500px;
     }
   }
@@ -148,18 +148,20 @@
     .rules {
       h1 {
         font-size: 18px;
-        margin-top: 0px;
+        margin-top: 10px;
         line-height: 22px;
+        margin-bottom: 2px;
       }
       h2 {
         margin-top: 5px;
         font-size: 16px;
+        line-height: 16px;
       }
       p {
         margin-bottom: 0;
-        margin-top: 0;
+        margin-top: 5px;
         font-size: 13px;
-        line-height: 13px;
+        line-height: 14px;
       }
       button {
         margin-top: 2px;
@@ -176,8 +178,9 @@
         padding: 0;
         line-height: 22px;
         margin-top: 0px;
-        text-align: center;
+        text-align: left;
         font-family: Segoe Print;
+        margin-bottom: 3px;
         font-size: 18px;
       }
       .min_text {
