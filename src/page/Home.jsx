@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/index.css";
+import "../style/index.scss";
 import { Link } from "react-router-dom";
 import Layout from "../component/Layout";
 
@@ -7,47 +7,51 @@ const Home = () => {
   return (
     <>
       <Layout
-        nameOne={"exaggerate-header"}
-        nameTwo={"exaggerate-img"}
-        nameTree={"exaggerate"}
-        vision={true}
-        book={true}
-        nameFoo={"exaggerate-lies"}
+        header={"exaggerate-header"}
+        image={"exaggerate-img"}
+        position={"exaggerate"}
         bookanime={"booksanime"}
         menuAnime={"exaggerateMenu"}
+        animeTiktok={"exaggerat-tiktook"}
+        animeFacebook={"exaggerat-facebok"}
       />
-      <div className="content content_mb">
+      <div
+        className="content content_mb"
+      >
         <div className="black">
           <div className="cate_wraper">
             <div className="wraper_wellcome">
-              <div className="text pt">Wellcome to Katy nails</div>
+              <div className="text pt">Welcome to Katy's nails!</div>
               <div className="min_text">
-                Here we are provide the Best quality of nails <br /> services.
-                <br /> Join us and make sure of benefits of hardware <br />
-                manicure - without using scissors. <br />
-                (safety, painless, sterile)
-                <br /> Care about your health.
-                <br />
-                For each client, we have prepared a set of
-                <br /> sterile and disposable consumable.
-                <br /> Ensuring an even, beautiful nail coverage. <br />
-                Big palette of colors and art designs.
-                <br /> Let's create nails beauty design together !
+                We provide the best hardware manicure. <br />
+                Our nail artist can guarantee high <br />
+                quality of services and flawless coverage. <br />
+                You'll definetly find something just <br />
+                right for you in our big palette <br />
+                of colors and art designs. <br />
+                Each client gets a disposable sterile manicure <br />
+                kit because we really care about <br />
+                your health. We don't use any scissors. <br />
+                Therefore you can be sure it'll be zero <br />
+                pain and 100% safe. <br />
+                Let's create nail beauty design together! <br />
               </div>
               <div style={{ textAlign: "left" }} className="text mt">
                 With love KT
               </div>
             </div>
             <div className="footer">
-              <div className="info_jobs">
-                INFO/JOBS
-                <ul className="icons">
-                  <li className="one"></li>
-                  <li className="two"></li>
-                  <li className="tree"></li>
-                </ul>
+              <div className="container">
+                <div className="info_jobs">
+                  INFO/JOBS
+                  <ul className="icons">
+                    <li className="one"></li>
+                    <li className="two"></li>
+                    <li className="tree"></li>
+                  </ul>
+                </div>
+                <Link to={"/map"}>WE ARE HERE</Link>
               </div>
-              <Link to={"/map"}>WE ARE HERE</Link>
             </div>
           </div>
         </div>

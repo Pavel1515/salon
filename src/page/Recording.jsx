@@ -2,27 +2,23 @@ import React, { useState } from "react";
 import Iframe from "../component/Iframe";
 import Layout from "../component/Layout";
 import Rules from "../component/Rules";
-import "../style/index.css";
+
 
 const Recording = () => {
   const [active, setActive] = useState(true);
   return (
     <>
       <Layout
-        nameOne={"decreaseHeader"}
-        nameTwo={"decrease-img"}
-        nameTree={"decrease"}
-        nameFoo={"lies"}
-        vision={true}
-        book={false}
+        header={"decreaseHeader"}
+        image={" decrease-img"}
+        position={"decrease"}
+        bookanime={"books"}
         menuAnime={"appearanceMenu"}
+        animeTiktok={"tiktook"}
+        animeFacebook={"facebok"}
       />
       <div className="content">
-        <div className="container_mb">
-          <div className="black">
             {active ? <Rules setActive={setActive} /> : <Iframe />}
-          </div>
-        </div>
       </div>
     </>
   );

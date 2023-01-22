@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./page/Home";
 import Recording from "./page/Recording";
 import Map from "./page/Map";
-import "./style/index.css";
+// import "./style/index.css";
 
 function App() {
   return (

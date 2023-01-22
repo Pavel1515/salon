@@ -1,18 +1,18 @@
 import React from "react";
-import "../style/index.css";
+// import "../style/index.css";
 import Layout from "../component/Layout";
 
 const Map = () => {
   return (
     <>
       <Layout
-        nameOne={"decreaseHeader"}
-        nameTwo={"decrease-img"}
-        nameTree={"decrease"}
-        nameFoo={"lies"}
-        vision={true}
-        book={false}
+        header={"decreaseHeader"}
+        image={" decrease-img"}
+        position={"decrease"}
+        bookanime={"books"}
         menuAnime={"appearanceMenu"}
+        animeTiktok={"tiktook"}
+        animeFacebook={"facebok"}
       />
       <div className="content">
         <iframe
