@@ -102,14 +102,17 @@
   p {
     color: #7e3a55;
     font-size: 18 px;
+    line-height: 18px;
   }
   button {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
     width: 100%;
     background-color: transparent;
     color: white;
     border: none;
     font-size: 25px;
-    margin-top: 10px;
     display: flex;
     justify-content: center;
     font-family: "SFProDisplay";
@@ -146,9 +149,11 @@
 
 .footer {
   width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
   .container {
     width: 1200px;
-    margin-top: 25px;
     font-size: 18px;
     display: flex;
     justify-content: space-between;
