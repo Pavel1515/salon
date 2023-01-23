@@ -15,25 +15,23 @@ const Home = () => {
         animeTiktok={"exaggerat-tiktook"}
         animeFacebook={"exaggerat-facebok"}
       />
-      <div
-        className="content content_mb"
-      >
+      <div className="content content_mb">
         <div className="black">
           <div className="cate_wraper">
             <div className="wraper_wellcome">
-              <div className="text pt">Welcome to Katy's nails!</div>
+              <div className="text pt">Welcome to KT nails!</div>
               <div className="min_text">
                 We provide the best hardware manicure. <br />
-                Our nail artist can guarantee high <br />
-                quality of services and flawless coverage. <br />
-                You'll definetly find something just <br />
-                right for you in our big palette <br />
+                Our nail artist can guarantee high quality <br /> of services
+                and flawless coverage. <br />
+                You'll definetly find something <br />
+                just right for you in our big palette <br />
                 of colors and art designs. <br />
-                Each client gets a disposable sterile manicure <br />
-                kit because we really care about <br />
-                your health. We don't use any scissors. <br />
-                Therefore you can be sure it'll be zero <br />
-                pain and 100% safe. <br />
+                Each client gets a disposable sterile <br />
+                manicure kit <br /> because we really care about your health.
+                <br /> We don't use any scissors. <br />
+                Therefore you can be sure <br />
+                it'll be zero pain and 100% safe. <br />
                 Let's create nail beauty design together! <br />
               </div>
               <div style={{ textAlign: "left" }} className="text mt">

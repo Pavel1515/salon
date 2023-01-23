@@ -98,7 +98,7 @@
     display: flex;
     transform: translateX(50%);
     margin-left: -45px;
-    bottom: 4px;
+    bottom: 10px;
     width: 100%;
     text-decoration: none;
     font-family: "SFProDisplay";
@@ -114,7 +114,6 @@
   }
   &-container {
     overflow: hidden !important;
-
     height: 260px;
     position: relative;
     width: 320px;

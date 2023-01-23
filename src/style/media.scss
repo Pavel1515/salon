@@ -131,10 +131,14 @@
   }
   .footer {
     width: 100%;
+    position: absolute;
+    bottom: 27px;
     .container {
-      margin-top: 20px;
-      width: 284px;
+      width: 320px;
+      padding-left: 10px;
+      padding-right: 10px;
       display: flex;
+      justify-content: space-between;
     }
   }
   .content {
@@ -142,8 +146,8 @@
     .black {
       margin: 0 auto;
       width: 320px;
-      padding-left: 18px;
-      padding-right: 18px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
     .rules {
       h1 {
@@ -169,8 +173,8 @@
       }
     }
     .wraper_wellcome {
-      width: fit-content;
-      margin: 0 auto;
+      width: 320px;
+      text-align: left;
       color: rgb(143, 57, 103);
       .text {
         position: relative;
@@ -179,15 +183,15 @@
         line-height: 22px;
         text-align: left;
         font-family: Segoe Print;
-        margin-bottom: 3px;
-        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-top: 30px;
         font-size: 18px;
       }
       .min_text {
         font-family: Segoe Print;
         font-size: 13px;
         overflow: hidden;
-        line-height: 15px;
+        line-height: 115%;
       }
       .mt {
         position: relative;
