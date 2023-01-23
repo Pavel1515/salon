@@ -14,8 +14,8 @@
     height: 100%;
     opacity: 0;
     animation-name: contentOpasity;
-    animation-delay: 1s;
-    animation-duration: 0.7s;
+    animation-delay: 0.35s;
+    animation-duration: 0.35s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 
@@ -112,7 +112,7 @@
     margin-top: 10px;
     display: flex;
     justify-content: center;
-    font-family: "Segoe Print";
+    font-family: "SFProDisplay";
     cursor: pointer;
   }
 }

@@ -168,7 +168,11 @@
         line-height: 14px;
       }
       button {
-        margin-top: 2px;
+        position: absolute;
+        bottom: 27px;
+        display: flex;
+        justify-content: center;
+        left: 0;
         font-size: 18px;
       }
     }
