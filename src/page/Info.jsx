@@ -1,14 +1,10 @@
-import React, { useState } from "react";
-import Iframe from "../component/Iframe";
+import React from "react";
 import Layout from "../component/Header";
-import Rules from "../component/Rules";
 
-const Recording = () => {
-  const [active, setActive] = useState(true);
+const Info = () => {
   return (
     <>
       <Layout
-        url={'/thai'}
         header={"decreaseHeader"}
         image={" decrease-img"}
         position={"decrease"}
@@ -16,13 +12,12 @@ const Recording = () => {
         menuAnime={"appearanceMenu"}
         animeTiktok={"tiktook"}
         animeFacebook={"facebok"}
-        animeInstagram={"instagram"}
       />
       <div className="content">
-        {active ? <Rules setActive={setActive} /> : <Iframe />}
+132321
       </div>
     </>
   );
 };
 
-export default Recording;
+export default Info;

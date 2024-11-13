@@ -1,57 +1,53 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../style/index.scss";
-import { Link } from "react-router-dom";
-import Layout from "../component/Layout";
+import { useNavigate } from "react-router-dom";
+import videoFile from "../assets/video/video.mp4";
 
 const Home = () => {
+  const videoRef = useRef(null); 
+  const navigate = useNavigate();
+
+  // Функция для воспроизведения видео и перехода
+  const handleLinkClick = (path) => {
+    if (videoRef.current) {
+      videoRef.current.play(); // Проигрываем видео
+
+      // Устанавливаем таймер для перехода после окончания видео
+      videoRef.current.onended = () => {
+        navigate(path); // Переход по указанному пути после завершения видео
+      };
+    }
+  };
+
   return (
     <>
-      <Layout
-        header={"exaggerate-header"}
-        image={"exaggerate-img"}
-        position={"exaggerate"}
-        bookanime={"booksanime"}
-        menuAnime={"exaggerateMenu"}
-        animeTiktok={"exaggerat-tiktook"}
-        animeFacebook={"exaggerat-facebok"}
-      />
-      <div className="content content_mb">
-        <div className="black">
-          <div className="cate_wraper">
-            <div className="wraper_wellcome">
-              <div className="text pt">Welcome to KT nails!</div>
-              <div className="min_text">
-                We provide the best hardware manicure. <br />
-                Our nail artist can guarantee high quality <br /> of services
-                and flawless coverage. <br />
-                You'll definetly find something <br />
-                just right for you in our big palette <br />
-                of colors and art designs. <br />
-                Each client gets a disposable sterile <br />
-                manicure kit <br /> because we really care about your health.
-                <br /> We don't use any scissors. <br />
-                Therefore you can be sure <br />
-                it'll be zero pain and 100% safe. <br />
-                Let's create nail beauty design together! <br />
-              </div>
-              <div style={{ textAlign: "left" }} className="text mt">
-                With love KT
-              </div>
-            </div>
-            <div className="footer">
-              <div className="container">
-                <div className="info_jobs">
-                  INFO/JOBS
-                  <ul className="icons">
-                    <li className="one"></li>
-                    <li className="two"></li>
-                    <li className="tree"></li>
-                  </ul>
-                </div>
-                <Link to={"/map"}>WE ARE HERE</Link>
-              </div>
-            </div>
-          </div>
+      <div className="home">
+        <div className="video">
+          <video
+            ref={videoRef}
+            width="320"
+            height="240"
+            src={videoFile}
+            type="video/mp4"
+          />
+        </div>
+        <div className="container_buttons">
+          <span className="font_english">
+            <button onClick={() => handleLinkClick("/english")} className="link-button">
+              English
+            </button>
+          </span>
+          <button onClick={() => handleLinkClick("/thai")} className="link-button">
+            ภาษาไทย
+          </button>
+          <span className="font_english">
+            <button onClick={() => handleLinkClick("/russian")} className="link-button">
+              Русский
+            </button>
+          </span>
+          <button onClick={() => handleLinkClick("/chinese")} className="link-button">
+            中文
+          </button>
         </div>
       </div>
     </>

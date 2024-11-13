@@ -1,18 +1,18 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/image/kt.svg";
+import logo from "../assets/image/logo.svg";
 import facebook from "../assets/image/fb.svg";
 import instagram from "../assets/image/inst.svg";
 import tiktok from "../assets/image/tk.svg";
-import menu from "../assets/image/menu.svg";
-const Layout = ({
+const Header = ({
   header,
   image,
   position,
   bookanime,
-  menuAnime,
+  animeInstagram,
   animeTiktok,
   animeFacebook,
+  url,
 }) => {
   return (
     <>
@@ -55,7 +55,7 @@ const Layout = ({
         <div className="mobile-container">
           <div className="lie"></div>
           <NavLink
-            to={"/"}
+            to={url}
             className="logo-mobile"
             style={{ animationName: position }}
           >
@@ -68,20 +68,17 @@ const Layout = ({
           >
             <img src={facebook} alt="" />
           </a>
-          <a href="https://www.instagram.com/nails_antalya_hurma/?igshid=YmMyMTA2M2Y%3D">
-            <img src={instagram} alt="" />
+          <a  className="facebook"
+            style={{ animationName: animeInstagram }} href="https://www.instagram.com/nails_antalya_hurma/?igshid=YmMyMTA2M2Y%3D">
+            <img src={instagram} alt="instagram" />
           </a>
           <a
             style={{ animationName: animeTiktok }}
             className="tiktok"
             href="https://www.tiktok.com/@kt_nails?_t=8Z1oQBUP2BR&_r=1"
           >
-            <img src={tiktok} alt="" />
+            <img src={tiktok} alt="tiktok" />
           </a>
-
-          <div style={{ animationName: menuAnime }} className="menu-mobile">
-            <img src={menu} alt="" />
-          </div>
         </div>
 
         <Link
@@ -97,4 +94,4 @@ const Layout = ({
   );
 };
 
-export default Layout;
+export default Header;

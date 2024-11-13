@@ -48,7 +48,7 @@
         text-decoration: none;
         p {
           font-size: 30px;
-          font-family: "SFProDisplay";
+          font-family: "Arial";
           font-weight: bold;
         }
 
@@ -92,35 +92,34 @@
   width: 100%;
   display: none;
   z-index: 22;
-  border-bottom: 1px solid white;
   animation-duration: 0.25s;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   .book_mb {
+    width: fit-content;
     height: 43px;
     animation-duration: 0.25s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     position: absolute;
     display: flex;
-    transform: translateX(50%);
-    margin-left: -45px;
-    bottom: 10px;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
     text-decoration: none;
-    font-family: "SFProDisplay";
+    font-family: "Arial";
+    font-weight: 800;
     color: rgb(143, 57, 103);
-    font-weight: bold;
     p {
-      font-size: 35px;
+      font-size: 49px;
+      transform: translateX(16px);
     }
     span {
-      transform: translate(-15px, 29px);
-      font-size: 15px;
+      transform: translate(2px, 49px);
+      font-size: 18px;
     }
   }
   &-container {
-    overflow: hidden !important;
     height: 260px;
     position: relative;
     width: 320px;
@@ -139,11 +138,19 @@
       }
     }
     .facebook {
+      height: fit-content;
       animation-duration: 0.25s;
       animation-fill-mode: forwards;
       animation-timing-function: linear;
     }
     .tiktok {
+      height: fit-content;
+      animation-duration: 0.25s;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+    }
+    .instagram {
+      height: fit-content;
       animation-duration: 0.25s;
       animation-fill-mode: forwards;
       animation-timing-function: linear;

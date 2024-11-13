@@ -2,16 +2,16 @@
   0% {
     background: rgb(0, 0, 0);
     background: linear-gradient(
-      0deg,
+      to bottom,
       rgba(0, 0, 0, 1) 0%,
-      rgba(184, 107, 136, 1) 60%,
-      rgba(250, 147, 187, 1) 100%
+      rgb(152, 99, 124) 60%,
+      rgb(235, 154, 193) 100%
     );
-    height: 310px;
+    height: 50vh;
   }
   15% {
     background: linear-gradient(
-      0deg,
+      to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgb(149, 114, 153) 60%,
       rgb(73, 54, 74) 100%
@@ -20,7 +20,7 @@
   25% {
     background: rgb(0, 0, 0);
     background: linear-gradient(
-      0deg,
+      to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgb(101, 75, 104) 60%,
       rgb(59, 45, 62) 100%
@@ -29,7 +29,7 @@
   50% {
     background: rgb(0, 0, 0);
     background: linear-gradient(
-      0deg,
+      to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgb(71, 52, 72) 60%,
       rgb(49, 37, 51) 100%
@@ -38,7 +38,7 @@
   75% {
     background: rgb(0, 0, 0);
     background: linear-gradient(
-      0deg,
+      to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgb(54, 40, 56) 60%,
       rgb(46, 34, 46) 100%
@@ -47,7 +47,7 @@
   85% {
     background: black;
     background: linear-gradient(
-      0deg,
+      to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgb(33, 26, 34) 60%,
       rgb(20, 15, 20) 100%
@@ -56,19 +56,18 @@
   100% {
     background: black;
     background: linear-gradient(
-      0deg,
+      to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgb(0, 0, 0) 60%,
       rgb(0, 0, 0) 100%
     );
-
     height: 90px;
   }
 }
 @keyframes decrease-img {
   0% {
-    height: 140px;
-    width: 140px;
+    width: 220px;
+    height: 220px;
   }
   100% {
     height: 50px;
@@ -78,9 +77,9 @@
 @keyframes decrease {
   0% {
     position: absolute;
-    top: 77px;
+    top: 120px;
     left: 50%;
-    transform: translateX(-70px);
+    transform: translateX(-50%);
   }
   100% {
     z-index: 10;
@@ -90,10 +89,10 @@
   }
 }
 @keyframes books {
-  100% {
+  0% {
     opacity: 1;
   }
-  80% {
+  50% {
     opacity: 0;
   }
   100% {
@@ -117,7 +116,16 @@
 
 @keyframes tiktook {
   0% {
-    transform: translateX(15px);
+    transform: translateX(-25px);
+  }
+  100% {
+    position: relative;
+    transform: translateX(0px);
+  }
+}
+@keyframes instagram {
+  0% {
+    transform: translateX(-50px);
   }
   100% {
     position: relative;
@@ -127,7 +135,7 @@
 
 @keyframes facebok {
   0% {
-    transform: translateX(-15px);
+    transform: translateX(-50px);
   }
   100% {
     position: relative;
@@ -136,12 +144,11 @@
 }
 ////////////////////////////////////////
 
-
 @keyframes exaggerate-header {
   0% {
     background: black;
     background: linear-gradient(
-      0deg,
+      to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgb(0, 0, 0) 60%,
       rgb(0, 0, 0) 100%
@@ -151,7 +158,7 @@
   15% {
     background: black;
     background: linear-gradient(
-      0deg,
+      to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgb(33, 26, 34) 60%,
       rgb(20, 15, 20) 100%
@@ -160,7 +167,7 @@
   25% {
     background: rgb(0, 0, 0);
     background: linear-gradient(
-      0deg,
+      to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgb(54, 40, 56) 60%,
       rgb(46, 34, 46) 100%
@@ -169,7 +176,7 @@
   50% {
     background: rgb(0, 0, 0);
     background: linear-gradient(
-      0deg,
+      to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgb(71, 52, 72) 60%,
       rgb(49, 37, 51) 100%
@@ -178,7 +185,7 @@
   75% {
     background: rgb(0, 0, 0);
     background: linear-gradient(
-      0deg,
+      to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgb(101, 75, 104) 60%,
       rgb(59, 45, 62) 100%
@@ -186,7 +193,7 @@
   }
   85% {
     background: linear-gradient(
-      0deg,
+      to bottom,
       rgba(0, 0, 0, 1) 0%,
       rgb(149, 114, 153) 60%,
       rgb(73, 54, 74) 100%
@@ -195,12 +202,12 @@
   100% {
     background: rgb(0, 0, 0);
     background: linear-gradient(
-      0deg,
+      to bottom,
       rgba(0, 0, 0, 1) 0%,
-      rgba(184, 107, 136, 1) 60%,
-      rgba(250, 147, 187, 1) 100%
+      rgb(152, 99, 124) 60%,
+      rgb(235, 154, 193) 100%
     );
-    height: 310px;
+    height: 50vh;
   }
 }
 
@@ -210,8 +217,8 @@
     width: 50px;
   }
   100% {
-    height: 140px;
-    width: 140px;
+    width: 220px;
+    height: 220px;
   }
 }
 
@@ -224,9 +231,9 @@
   }
   100% {
     position: absolute;
-    top: 77px;
+    top: 120px;
     left: 50%;
-    transform: translateX(-70px);
+    transform: translateX(-50%);
   }
 }
 
@@ -234,7 +241,7 @@
   0% {
     opacity: 0;
   }
-  99% {
+  70% {
     opacity: 0;
   }
   100% {
@@ -242,14 +249,13 @@
   }
 }
 
-@keyframes exaggerateMenu {
+@keyframes exaggerate-instagram {
   0% {
-    width: 50px;
-    opacity: 1;
+    position: relative;
+    transform: translateX(0px);
   }
   100% {
-    width: 50px;
-    opacity: 0;
+    transform: translateX(-45px);
   }
 }
 
@@ -259,7 +265,7 @@
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(-15px);
+    transform: translateX(-100px);
   }
 }
 
@@ -269,7 +275,7 @@
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(15px);
+    transform: translateX(8px);
   }
 }
 

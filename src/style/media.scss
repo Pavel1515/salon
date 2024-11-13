@@ -85,6 +85,7 @@
       padding-right: 18px;
     }
     .wraper_wellcome {
+   
       width: fit-content;
       margin: 0 auto;
       color: rgb(143, 57, 103);
@@ -94,7 +95,7 @@
         padding: 0;
         line-height: 22px;
         margin-top: 5px;
-        text-align: left;
+        text-align: center;
         font-family: Segoe Print;
         font-size: 20px;
       }
@@ -188,7 +189,7 @@
         z-index: 22;
         padding: 0;
         line-height: 22px;
-        text-align: left;
+        text-align: center;
         font-family: Segoe Print;
         margin-bottom: 5px;
         margin-top: 30px;
@@ -198,11 +199,13 @@
         font-family: Segoe Print;
         font-size: 13px;
         overflow: hidden;
+        text-align: center;
         line-height: 115%;
       }
       .mt {
         position: relative;
         z-index: 22;
+        text-align: center;
         margin-top: 5px;
       }
     }

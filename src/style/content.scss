@@ -31,41 +31,6 @@
       cursor: pointer;
       display: flex;
       align-items: center;
-      .icons {
-        display: block;
-        list-style-type: none;
-        position: relative;
-        margin-left: 5px;
-        background-color: transparent;
-        .one {
-          top: 1px;
-          position: absolute;
-          height: 1px;
-          position: absolute;
-          background-color: rgb(143, 57, 103);
-          width: 100%;
-          z-index: 10;
-          content: "";
-        }
-        .two {
-          content: "";
-          height: 1px;
-          width: 100%;
-          background-color: rgb(143, 57, 103);
-          position: absolute;
-          top: 6.5px;
-        }
-        .tree {
-          content: "";
-          height: 1px;
-          width: 100%;
-          background-color: rgb(143, 57, 103);
-          position: absolute;
-          top: 13px;
-        }
-        width: 15px;
-        height: 15px;
-      }
     }
     a {
       cursor: pointer;
