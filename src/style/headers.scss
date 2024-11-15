@@ -95,6 +95,9 @@
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   .book_mb {
+ font-family: "Krub", sans-serif;
+ font-weight: 700;
+ font-style: normal;
     margin-top: 13px;
     margin-bottom: 20px;
     animation-duration: 0.25s;
@@ -103,10 +106,12 @@
     display: flex;
     justify-content: center;
     text-decoration: none;
-    font-family: "Arial";
-    font-weight: 800;
+    font-weight: bold;
     color: rgb(143, 57, 103);
     p {
+      font-family: "Krub", sans-serif;
+      font-weight: 700;
+      font-style: normal;
       font-size: 40px;
     }
     span {
