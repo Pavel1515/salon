@@ -121,8 +121,8 @@
     position: absolute;
     top: 37%;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -137,7 +137,7 @@
     position: absolute;
     top: 37%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -192,16 +192,16 @@
     position: absolute;
     top: 37%;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   100% {
     position: absolute;
     z-index: 150;
     top: 0;
     left: 20px;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 }
 
@@ -210,16 +210,17 @@
     position: absolute;
     top: 37%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
   }
   100% {
     position: absolute;
     z-index: 150;
     top: 0;
     left: 20px;
-    transform: translateX(0);
+    transform: translate(0, 0);
   }
 }
+
 
 @keyframes books {
   0% {
