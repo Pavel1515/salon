@@ -29,11 +29,12 @@ body::-webkit-scrollbar-thumb {
 .video {
   flex: 1;
   display: flex;
-  justify-content: center;align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .container_buttons {
   width: 100%;
-flex: 1;
+  flex: 1;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -45,7 +46,7 @@ flex: 1;
   background-color: transparent;
   border: none;
   text-decoration: none;
-  color: #944a71;
+  color: rgb(148, 74, 113);
   font-size: 45px;
   font-weight: bold;
 }

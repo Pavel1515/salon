@@ -1,52 +1,39 @@
 import React from "react";
 
-const Rules = ({setActive}) => {
+const Rules = ({ setActive }) => {
   return (
-    <div className="rules">
+    <div className="rules taiwand">
       <h1>
-        Please read policies <br />
-        before an appointment
+        ก่อนการนัดหมาย <br />
+        โปรดอ่านกฎและตกลง
       </h1>
       <div>
-        <h2>Reschedule or cancel</h2>
         <p>
-          Clients can reschedule or cancel their
-          <br /> appointment up to 24 hours in advance <br /> with no charge.
-        </p>
-      </div>
-      <div>
-        <h2>No Show or Late Cancellation</h2>
-        <p>
-          Prepayment 25% made by the client <br />
-          at the time of booking is non-refundable if
-          <br /> the client did not show up or not canceled <br />
-          the booking 24 hours before the visit.
-        </p>
-      </div>
-
-      <div>
-        <h2>Late policy</h2>
-        <p>
-          If you are late more than 10 minutes
-          <br /> You pay fee 10$ extra.
-        </p>
-      </div>
-
-      <div>
-        <h2>No accompanying visitors</h2>
-        <p>
-          will be permitted including: <br />
-          family, children, friends.
+          การจองออนไลน์ต้องชำระเงินล่วงหน้า 50% <br />
+          การจองออนไลน์มีให้บริการเป็นภาษาอังกฤษเท่านั้น <br />
+          หากคุณต้องการจองเป็นภาษาไทย <br />
+          ใช้ Instagram @katy_beauty_salon_bangkok <br />
+          หากต้องการยกเลิกหรือกำหนดเวลานัดหมายใหม่ <br />
+          โปรดติดต่อผู้ดูแลระบบ <br />
+          ทาง Instagram ไม่เกิน <br />
+          24 ชั่วโมงก่อนการนัดหมาย <br />
+          @katy_beauty_salon_bangkok <br />
+          หากไม่แสดงตัวหรือยกเลิกหลัง 24 ชั่วโมง <br />
+          จะไม่สามารถขอคืนเงินได้ <br />
+          มาสายเกิน 25 นาที <br />
+          การนัดหมายของคุณจะถูกยกเลิกโดยอัตโนมัติ <br />
+          และจะไม่สามารถขอคืนเงินที่ชำระไว้ล่วงหน้าได้ <br />
+          ไม่อนุญาตให้พาผู้มาด้วย <br />
+          รวมถึง: ครอบครัว เด็ก เพื่อน <br />
+          ไม่อนุญาตให้นำสัตว์เลี้ยงเข้าร้าน <br />
+          หากมีข้อสงสัยใดๆ โปรดติดต่อ: <br />
+          Instagram @katy_beauty_salon_bangkok
         </p>
       </div>
 
-      <div>
-        <h2>No Pets </h2> <p>No Pets are allowed in the salon.</p>
-      </div>
-      <button onClick={()=>setActive(false)}>AGREE</button>
+      <button onClick={() => setActive(false)}>ตกลง</button>
     </div>
   );
 };
 
 export default Rules;
-

@@ -60,14 +60,14 @@
     font-size: 25px;
   }
   h2 {
-    color: #7e3a55;
+    color: rgb(148, 74, 113);
     margin-top: 8px;
     font-size: 22px;
   }
   p {
-    color: #7e3a55;
-    font-size: 18 px;
-    line-height: 18px;
+    color: rgb(148, 74, 113);
+    font-size: 18px;
+    line-height: 130%;
   }
   button {
     position: absolute;
@@ -87,7 +87,7 @@
 .wraper_wellcome {
   width: fit-content;
   margin: 0 auto;
-  color: rgb(143, 57, 103);
+  color: rgb(148, 74, 113);
   .text {
     position: relative;
     z-index: 22;
@@ -123,6 +123,6 @@
     display: flex;
     justify-content: space-between;
     font-family: "SFProDisplay";
-    color: rgb(143, 57, 103);
+    color: rgb(148, 74, 113);
   }
 }
