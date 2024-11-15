@@ -218,19 +218,27 @@
     height: 50px;
     width: 50px;
   }
+  50% {
+    height: 80px;
+    width: 80px;
+  }
+  99%{
+    width: 160px;
+  }
   100% {
-    max-width:160px ;
-    width:100% ;
+    max-width: 160px;
+    width: 100%;
     height: auto;
   }
 }
+
 
 @keyframes exaggerate {
   0% {
     position: absolute;
     z-index: 150;
     top: 0;
-    left: 0;
+    left:20px;
   }
   100% {
     position: absolute;
