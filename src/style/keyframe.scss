@@ -126,7 +126,8 @@
     z-index: 150;
     top: 0;
     left: 20px;
-    transform: translateZ(0);
+    transform: translateX(0%);
+
   }
   100% {
     position: absolute;
@@ -134,7 +135,7 @@
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    transform: translateZ(0);
+
   }
 }
 
@@ -144,14 +145,15 @@
     z-index: 150;
     top: 0;
     left: 20px;
-    transform: translateZ(0);
+    transform: translateX(0%);
+
   }
   100% {
     position: absolute;
     top: 37%;
     left: 50%;
     transform: translateX(-50%);
-    transform: translateZ(0);
+
   }
 }
 
