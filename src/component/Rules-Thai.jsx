@@ -1,6 +1,6 @@
 import React from "react";
 
-const Rules = ({ setActive }) => {
+const Rules = () => {
   return (
     <div className="rules taiwand">
       <h1>
@@ -30,8 +30,9 @@ const Rules = ({ setActive }) => {
           Instagram @katy_beauty_salon_bangkok
         </p>
       </div>
-
-      <button onClick={() => setActive(false)}>ตกลง</button>
+      <a href="https://n1177760.alteg.io">
+        <button>ตกลง</button>
+      </a>
     </div>
   );
 };
