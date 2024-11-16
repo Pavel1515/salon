@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Iframe from "../component/Iframe";
-import Layout from "../component/Header-Thai";
-import Rules from "../component/Rules-Thai";
+import Layout from "../component/Header-En";
+import Rules from "../component/Rules-English";
 
 const Recording = () => {
   const [active, setActive] = useState(true);
   return (
     <>
       <Layout
-        url={"/thai"}
+        url={"/english"}
         header={"decreaseHeader"}
         image={" decrease-img"}
         position={"decrease"}

@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../component/Header";
+import Layout from "../component/Header-Thai";
 
 const Info = () => {
   return (
@@ -13,9 +13,7 @@ const Info = () => {
         animeTiktok={"tiktook"}
         animeFacebook={"facebok"}
       />
-      <div className="content">
-132321
-      </div>
+      <div className="content">132321</div>
     </>
   );
 };
