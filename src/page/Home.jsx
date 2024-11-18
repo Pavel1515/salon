@@ -27,7 +27,7 @@ const Home = () => {
             return prevIndex;
           }
         });
-      }, 40); 
+      }, 60); 
     }
     return () => clearInterval(interval);
   }, [isPlaying, svgFiles.length]);
