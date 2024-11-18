@@ -27,9 +27,21 @@ const Thai = () => {
     adjustFontSize();
     window.addEventListener("resize", adjustFontSize);
 
-    // Убираем слушатель события resize при размонтировании
+    // Используем ResizeObserver для слежения за изменениями размеров контента
+    const resizeObserver = new ResizeObserver(() => {
+      adjustFontSize();
+    });
+
+    if (contentRef.current) {
+      resizeObserver.observe(contentRef.current);
+    }
+
+    // Убираем слушатель события resize и наблюдатель при размонтировании
     return () => {
       window.removeEventListener("resize", adjustFontSize);
+      if (contentRef.current) {
+        resizeObserver.unobserve(contentRef.current);
+      }
     };
   }, []);
 
@@ -49,7 +61,7 @@ const Thai = () => {
       <div className="content content_mb custom-content" ref={contentRef}>
         <div className="custom-black">
           <div className="custom-cate-wraper">
-            <div className="custom-wraper-wellcome">
+            <div className="custom-wraper-wellcome" style={{color: 'white'}}>
               {/* Текст с начальным размером 18px */}
               <div
                 className="custom-text pt adjustable-text"
