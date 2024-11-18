@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="900px" height="600px" viewBox="0 0 900 600" style="enable-background:new 0 0 900 600;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000114788119616002028070000017214446057178704289_);}
+	.st1{fill:#012169;}
+	.st2{stroke:#FFFFFF;stroke-width:120;stroke-miterlimit:80;}
+	
+		.st3{clip-path:url(#SVGID_00000167354457697393388500000018152068963531867038_);stroke:#C8102E;stroke-width:80;stroke-miterlimit:80;}
+	.st4{stroke:#FFFFFF;stroke-width:200;stroke-miterlimit:80;}
+	.st5{stroke:#C8102E;stroke-width:120;stroke-miterlimit:80;}
+	.st6{fill:none;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="900" height="600"/>
+	</defs>
+	<clipPath id="SVGID_00000171700813177405527770000003622542764661279632_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g style="clip-path:url(#SVGID_00000171700813177405527770000003622542764661279632_);">
+		<path class="st1" d="M0,0v600h900V0H0z"/>
+		<path class="st2" d="M0,0l900,600 M900,0L0,600"/>
+		<g>
+			<defs>
+				<polygon id="SVGID_00000089537509875090339400000015946849162129980837_" points="450,300 900,300 900,600 450,600 0,600 0,300 
+					0,0 450,0 900,0 				"/>
+			</defs>
+			<clipPath id="SVGID_00000150787994365926147050000000313834527250559623_">
+				<use xlink:href="#SVGID_00000089537509875090339400000015946849162129980837_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<path style="clip-path:url(#SVGID_00000150787994365926147050000000313834527250559623_);stroke:#C8102E;stroke-width:80;stroke-miterlimit:80;" d="
+				M0,0l900,600 M900,0L0,600"/>
+		</g>
+		<path class="st4" d="M450,0v600 M0,300h900"/>
+		<path class="st5" d="M450,0v600 M0,300h900"/>
+	</g>
+</g>
+<rect x="-0.3" y="0.1" class="st6" width="900" height="600"/>
+</svg>

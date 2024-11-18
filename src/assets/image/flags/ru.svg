@@ -1,0 +1,20 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #d52b1e;
+      }
+
+      .cls-3 {
+        fill: #0039a6;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M0,0H900V200H0Z"/>
+  <path class="cls-2" d="M0,400H900V600H0Z"/>
+  <path class="cls-3" d="M0,200H900V400H0Z"/>
+</svg>

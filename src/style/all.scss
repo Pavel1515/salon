@@ -26,20 +26,21 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   min-height: 100vh;
 }
-.video {
-  flex: 1;
+.svg-animation-container {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  height: 288px;
 }
 .container_buttons {
   width: 100%;
-  flex: 1;
   align-items: center;
+  flex: 1;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   flex-direction: column;
-  gap: 15px;
+  gap: 0px;
 }
 .container_buttons button {
   background-color: transparent;
@@ -53,7 +54,13 @@ body::-webkit-scrollbar-thumb {
   font-family: Arial, Helvetica, sans-serif;
 }
 .link-button img {
-  max-width: 90px;
+  max-width: 40px;
   height: auto;
   object-fit: cover;
+}
+.cate_wraper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
 }

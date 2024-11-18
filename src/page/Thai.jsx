@@ -1,9 +1,38 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../style/index.scss";
 import { Link } from "react-router-dom";
 import Header from "../component/Header-Thai";
 
 const Thai = () => {
+  const contentRef = useRef(null);
+
+  const adjustFontSize = () => {
+    if (contentRef.current) {
+      const textElements = contentRef.current.querySelectorAll(".adjustable-text");
+
+      textElements.forEach((el) => {
+        let fontSize = parseInt(el.dataset.defaultFontSize) || 16;
+        el.style.fontSize = `${fontSize}px`;
+
+        while ((el.scrollHeight > el.clientHeight || el.scrollWidth > el.clientWidth) && fontSize > 1) {
+          fontSize -= 1;
+          el.style.fontSize = `${fontSize}px`;
+        }
+      });
+    }
+  };
+
+  useEffect(() => {
+    // Настраиваем размер текста при монтировании компонента и изменении размеров окна
+    adjustFontSize();
+    window.addEventListener("resize", adjustFontSize);
+
+    // Убираем слушатель события resize при размонтировании
+    return () => {
+      window.removeEventListener("resize", adjustFontSize);
+    };
+  }, []);
+
   return (
     <>
       <Header
@@ -15,14 +44,32 @@ const Thai = () => {
         menuAnime={"exaggerateMenu"}
         animeTiktok={"exaggerat-tiktook"}
         animeFacebook={"exaggerat-facebok"}
-        animeInstagram={"exaggerate-instagram "}
+        animeInstagram={"exaggerate-instagram"}
       />
-      <div className="content content_mb">
-        <div className="black">
-          <div className="cate_wraper">
-            <div className="wraper_wellcome">
-              <div className="text pt">ยินดีต้อนรับสู่ KATY beauty!</div>
-              <div className="min_text">
+      <div className="content content_mb custom-content" ref={contentRef}>
+        <div className="custom-black">
+          <div className="custom-cate-wraper">
+            <div className="custom-wraper-wellcome">
+              {/* Текст с начальным размером 18px */}
+              <div
+                className="custom-text pt adjustable-text"
+                data-default-font-size="18"
+                style={{
+                  whiteSpace: "normal",
+                  wordBreak: "break-word",
+                }}
+              >
+                ยินดีต้อนรับสู่ KATY beauty!
+              </div>
+              {/* Текст с начальным размером 15px */}
+              <div
+                className="custom-min-text adjustable-text"
+                data-default-font-size="15"
+                style={{
+                  whiteSpace: "normal",
+                  wordBreak: "break-word",
+                }}
+              >
                 เราให้บริการที่ดีที่สุด:
                 <br />
                 ทำเล็บมือเล็บเท้าต่อขนตา
@@ -33,23 +80,39 @@ const Thai = () => {
                 <br />
                 คุณจะพบสิ่งที่เหมาะสมอย่างแน่นอน
                 <br />
-                จากจานสีและการออกแบบขนาดใหญ่
+                จากจานสี и дизайнов;
                 <br />
                 เล็บของคุณจะแข็งแรงและมีสุขภาพดี
                 <br />
                 มาสร้างสรรค์ดีไซน์ความงามด้วยกันเถอะ!
               </div>
-              <div className="text mt">ด้วยรัก, KATY</div>
+              {/* Текст с начальным размером 18px */}
+              <div
+                className="custom-text mt adjustable-text"
+                data-default-font-size="18"
+                style={{
+                  whiteSpace: "normal",
+                  wordBreak: "break-word",
+                }}
+              >
+                ด้วยรัก, KATY
+              </div>
             </div>
-            <div className="footer">
-              <div className="container">
-                <div className="info_jobs">
-                  <Link to={"/info"}> ข้อมูล</Link>
+            <div className="custom-footer">
+              <div className="custom-container">
+                <div className="custom-info-jobs">
+                  <Link to={"/info"} className="adjustable-text" data-default-font-size="15">
+                    ข้อมูล
+                  </Link>
                 </div>
-                <div className="info_jobs">
-                  <Link to={"/info"}> รับงานกับเรา</Link>
+                <div className="custom-info-jobs">
+                  <Link to={"/info"} className="adjustable-text" data-default-font-size="15">
+                    รับงานกับเรา
+                  </Link>
                 </div>
-                <Link to={"/map"}>เราอยู่ที่น</Link>
+                <Link to={"/map"} className="adjustable-text" data-default-font-size="15">
+                  เราอยู่ที่น
+                </Link>
               </div>
             </div>
           </div>
