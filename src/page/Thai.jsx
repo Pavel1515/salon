@@ -61,7 +61,7 @@ const Thai = () => {
                   whiteSpace: "normal",
                   color: "#ffffff",
                   wordBreak: "break-word",
-                  fontSize: `${fontSize.customText}px`,
+                  fontSize: `${fontSize.minText}px`,
                 }}
               >
                 ยินดีต้อนรับสู่ KATY beauty!
@@ -99,7 +99,7 @@ const Thai = () => {
                   whiteSpace: "normal",
                   color: "#ffffff",
                   wordBreak: "break-word",
-                  fontSize: `${fontSize.customText}px`,
+                  fontSize: `${fontSize.minText}px`,
                 }}
               >
                 ด้วยรัก, KATY
@@ -111,7 +111,7 @@ const Thai = () => {
                   <Link
                     to={"/info"}
                     className="adjustable-text"
-                    style={{ fontSize: `${fontSize.minText}px` }}
+                    style={{ fontSize: `${fontSize.customText}px` }}
                   >
                     ข้อมูล
                   </Link>
@@ -120,7 +120,7 @@ const Thai = () => {
                   <Link
                     to={"/info"}
                     className="adjustable-text"
-                    style={{ fontSize: `${fontSize.minText}px` }}
+                    style={{ fontSize: `${fontSize.customText}px` }}
                   >
                     รับงานกับเรา
                   </Link>
@@ -128,7 +128,7 @@ const Thai = () => {
                 <Link
                   to={"/map"}
                   className="adjustable-text"
-                  style={{ fontSize: `${fontSize.minText}px` }}
+                  style={{ fontSize: `${fontSize.customText}px` }}
                 >
                   เราอยู่ที่น
                 </Link>
