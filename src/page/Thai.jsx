@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import "../style/index.scss";
 import { Link } from "react-router-dom";
 import Header from "../component/Header-Thai";
@@ -13,11 +13,11 @@ const Thai = () => {
   });
 
   useEffect(() => {
-    // Функция для вывода высоты экрана в консоль и изменения размера шрифта
     const handleResize = () => {
+      console.log(window.innerHeight - 375);
       const newHeight = window.innerHeight - 375;
       setHeight(newHeight);
-      
+
       // Логика для обновления размера шрифтов при изменении высоты
       let baseFontSize = newHeight * 0.04;
       let minTextFontSize = newHeight * 0.04;
@@ -30,18 +30,15 @@ const Thai = () => {
       });
     };
 
-    // Добавление слушателя изменения размера экрана
-    window.addEventListener('resize', handleResize);
-
-    // Проверяем размер экрана при монтировании компонента
+    window.addEventListener("resize", handleResize);
     handleResize();
-
-    // Удаление слушателя при размонтировании компонента
-    return () => window.removeEventListener('resize', handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, [height]);
 
   return (
-    <>
+    <div
+      style={{ display: "grid", gridTemplateRows: "auto 1fr", height: "100vh" }}
+    >
       <Header
         url={"/thai"}
         header={"exaggerate-header"}
@@ -53,7 +50,7 @@ const Thai = () => {
         animeFacebook={"exaggerat-facebok"}
         animeInstagram={"exaggerate-instagram"}
       />
-      <div className="custom-content" >
+      <div className="custom-content-thai">
         <div className="custom-black">
           <div className="custom-cate-wraper">
             <div className="custom-wraper-wellcome">
@@ -61,9 +58,10 @@ const Thai = () => {
               <div
                 className="custom-text pt adjustable-text"
                 style={{
-                  whiteSpace: "normal", color: "#ffffff",
+                  whiteSpace: "normal",
+                  color: "#ffffff",
                   wordBreak: "break-word",
-                  fontSize: `${fontSize.customText}px`
+                  fontSize: `${fontSize.customText}px`,
                 }}
               >
                 ยินดีต้อนรับสู่ KATY beauty!
@@ -72,9 +70,10 @@ const Thai = () => {
               <div
                 className="custom-min-text adjustable-text"
                 style={{
-                  whiteSpace: "normal", color: "#ffffff",
+                  whiteSpace: "normal",
+                  color: "#ffffff",
                   wordBreak: "break-word",
-                  fontSize: `${fontSize.minText}px`
+                  fontSize: `${fontSize.minText}px`,
                 }}
               >
                 เราให้บริการที่ดีที่สุด:
@@ -97,9 +96,10 @@ const Thai = () => {
               <div
                 className="custom-text mt adjustable-text"
                 style={{
-                  whiteSpace: "normal", color: "#ffffff",
+                  whiteSpace: "normal",
+                  color: "#ffffff",
                   wordBreak: "break-word",
-                  fontSize: `${fontSize.customText}px`
+                  fontSize: `${fontSize.customText}px`,
                 }}
               >
                 ด้วยรัก, KATY
@@ -108,16 +108,28 @@ const Thai = () => {
             <div className="custom-footer">
               <div className="custom-container">
                 <div className="custom-info-jobs">
-                  <Link to={"/info"} className="adjustable-text" style={{ fontSize: `${fontSize.minText}px` }}>
+                  <Link
+                    to={"/info"}
+                    className="adjustable-text"
+                    style={{ fontSize: `${fontSize.minText}px` }}
+                  >
                     ข้อมูล
                   </Link>
                 </div>
                 <div className="custom-info-jobs">
-                  <Link to={"/info"} className="adjustable-text" style={{ fontSize: `${fontSize.minText}px` }}>
+                  <Link
+                    to={"/info"}
+                    className="adjustable-text"
+                    style={{ fontSize: `${fontSize.minText}px` }}
+                  >
                     รับงานกับเรา
                   </Link>
                 </div>
-                <Link to={"/map"} className="adjustable-text" style={{ fontSize: `${fontSize.minText}px` }}>
+                <Link
+                  to={"/map"}
+                  className="adjustable-text"
+                  style={{ fontSize: `${fontSize.minText}px` }}
+                >
                   เราอยู่ที่น
                 </Link>
               </div>
@@ -125,7 +137,7 @@ const Thai = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
