@@ -102,3 +102,7 @@ body::-webkit-scrollbar-thumb {
     }
   }
 }
+html {
+  filter: none !important; /* Отключаем любые фильтры, которые могут быть добавлены браузером */
+  color-scheme: light !important; /* Заставляем браузер использовать светлую тему */
+}
