@@ -79,7 +79,6 @@ const Thai = () => {
                 className="custom-text pt adjustable-text"
                 style={{
                   whiteSpace: "normal",
-                  color: "#ffffff",
                   wordBreak: "break-word",
                   fontSize: `${fontSize.minText}px`,
                 }}
@@ -91,7 +90,6 @@ const Thai = () => {
                 className="custom-min-text adjustable-text"
                 style={{
                   whiteSpace: "normal",
-                  color: "#ffffff",
                   wordBreak: "break-word",
                   fontSize: `${fontSize.minText}px`,
                 }}
@@ -117,7 +115,6 @@ const Thai = () => {
                 className="custom-text mt adjustable-text"
                 style={{
                   whiteSpace: "normal",
-                  color: "#ffffff",
                   wordBreak: "break-word",
                   fontSize: `${fontSize.minText}px`,
                 }}

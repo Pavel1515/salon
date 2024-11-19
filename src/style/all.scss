@@ -71,8 +71,13 @@ body::-webkit-scrollbar-thumb {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+.custom-text{
+ text-align: center;
+ color: #944a71;
+} 
 .custom-cate-wraper {
   height: 100%;
+  color: #944a71;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
