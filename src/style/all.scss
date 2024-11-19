@@ -58,16 +58,36 @@ body::-webkit-scrollbar-thumb {
   height: auto;
   object-fit: cover;
 }
-.cate_wraper{
+.cate_wraper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
 }
-.custom-content-thai{
+.custom-black{
+  height: 100%;
+}
+.custom-cate-wraper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.custom-content-thai {
+  padding: 10px 54.5px;
   height: 100%;
   font-family: "Krub", serif;
   font-weight: 400;
   font-style: normal;
-  text-align: center;
+}
+.custom-footer {
+  .custom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
