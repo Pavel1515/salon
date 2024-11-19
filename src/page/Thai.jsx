@@ -13,8 +13,24 @@ const Thai = () => {
   });
 
   useEffect(() => {
+    // Функция для установки значения vh в CSS переменную
+    const setVhProperty = () => {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    };
+
+    setVhProperty(); // Устанавливаем значение при монтировании
+
+    // Обновляем значение при изменении размера окна
+    window.addEventListener('resize', setVhProperty);
+
+    return () => {
+      window.removeEventListener('resize', setVhProperty);
+    };
+  }, []);
+
+  useEffect(() => {
     const handleResize = () => {
-      console.log(window.innerHeight - 375);
       const newHeight = window.innerHeight - 375;
       setHeight(newHeight);
 
@@ -37,7 +53,11 @@ const Thai = () => {
 
   return (
     <div
-      style={{ display: "grid", gridTemplateRows: "auto 1fr", height: "100vh" }}
+      style={{
+        display: "grid",
+        gridTemplateRows: "auto 1fr",
+        height: "calc(var(--vh) * 100)", // Используем пользовательскую переменную vh для высоты
+      }}
     >
       <Header
         url={"/thai"}
