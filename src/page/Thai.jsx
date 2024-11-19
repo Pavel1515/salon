@@ -16,16 +16,16 @@ const Thai = () => {
     // Функция для установки значения vh в CSS переменную
     const setVhProperty = () => {
       let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
     };
 
     setVhProperty(); // Устанавливаем значение при монтировании
 
     // Обновляем значение при изменении размера окна
-    window.addEventListener('resize', setVhProperty);
+    window.addEventListener("resize", setVhProperty);
 
     return () => {
-      window.removeEventListener('resize', setVhProperty);
+      window.removeEventListener("resize", setVhProperty);
     };
   }, []);
 
@@ -95,25 +95,22 @@ const Thai = () => {
                 }}
               >
                 เราให้บริการที่ดีที่สุด:
-
+                <br />
+                เราให้บริการที่ดีที่สุด:
                 <br />
                 ทำเล็บมือเล็บเท้าต่อขนตา
-
                 <br />
                 เรารับประกันบริการคุณภาพสูง
-
                 <br />
-                มีให้เลือกหลายสีและการออกแบบเชิงศิลปะของเรา
-
+                คุณจะพบสิ่งที่เหมาะสมอย่างแน่นอน
                 <br />
-                คุณแน่ใจว่าจะพบบางสิ่งบางอย่างที่คุณชอบ
-
+                เพื่อตัวคุณเองในจานสีขนาดใหญ่ของเรา
                 <br />
-                เล็บและขนตาของคุณจะแข็งแรงและมีสุขภาพดี
-
+                และการออกแบบเชิงศิลปะ
                 <br />
-                มาสร้างสรรค์ดีไซน์ความงามด้วยกัน
-                
+                เล็บของคุณจะแข็งแรงและมีสุขภาพดี
+                <br />
+                มาสร้างสรรค์ดีไซน์ความงามด้วยกันเถอะ!
               </div>
               {/* Текст с начальным размером 18px */}
               <div
