@@ -36,7 +36,7 @@ const Thai = () => {
 
       // Логика для обновления размера шрифтов при изменении высоты
       let baseFontSize = newHeight * 0.04;
-      let minTextFontSize = newHeight * 0.04;
+      let minTextFontSize = newHeight * 0.045;
       let customTextFontSize = newHeight * 0.045;
 
       setFontSize({
