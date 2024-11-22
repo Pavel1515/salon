@@ -132,6 +132,7 @@ body::-webkit-scrollbar-thumb {
 }
 .rules-image {
   padding: 20px;
+  padding-bottom: 38px;
   display: flex;
   align-items: start;
   flex-direction: column;
@@ -151,5 +152,10 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     text-align: center;
 width: 100%;
+  }
+}
+.thai{
+  a{
+    font-family: "Krub", serif !important;
   }
 }

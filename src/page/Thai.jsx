@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../style/index.scss";
 import { Link } from "react-router-dom";
 import Header from "../component/Header-Thai";
-import text from "../assets/image/text/thay/GenegalThai.svg";
+import text from "../assets/image/text/thay/BOOK-Thai.svg";
 
 // Основной компонент Thai, который также включает в себя логику изменения размера шрифтов в зависимости от высоты экрана
 const Thai = () => {
