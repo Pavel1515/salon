@@ -19,7 +19,7 @@ const Thai = () => {
         animeFacebook={"exaggerat-facebok"}
         animeInstagram={"exaggerate-instagram"}
       />
-      <div className="custom-content-thai">
+      <div style={{paddingBottom:"45px"}} className="custom-content-thai ">
         <img src={text} alt="wellcome" />
         <div className="custom-footer">
           <div className="custom-info-jobs">

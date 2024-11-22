@@ -8,7 +8,7 @@ const Recording = () => {
   return (
     <>
       <Layout
-        url={"/chinese"}
+        url={"/thai"}
         header={"decreaseHeader"}
         image={" decrease-img"}
         position={"decrease"}
