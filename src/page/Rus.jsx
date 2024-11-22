@@ -22,27 +22,21 @@ const English = () => {
         <div className="custom-content-thai">
           <img src={text} alt="wellcome" />
           <div className="custom-footer">
-            <div
-              className="adjustable-text info-button"
-              style={{ fontSize: `18px` }}
-            >
-              ข้อมูล
-            </div>
             <div className="custom-info-jobs">
               <Link
                 to={"/info"}
-                className="adjustable-text"
-                style={{ fontSize: `18px` }}
+                className="adjustable-text arial"
+                style={{ fontSize: `16px` }}
               >
-                รับงานกับเรา
+                Информация
               </Link>
             </div>
             <Link
-              to={"/map"}
-              className="adjustable-text"
-              style={{ fontSize: `18px` }}
+              to={"/map-ru"}
+              className="adjustable-text arial"
+              style={{ fontSize: `16px` }}
             >
-              เราอยู่ที่น
+           Мы здесь
             </Link>
           </div>
         </div>

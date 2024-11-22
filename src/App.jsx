@@ -9,6 +9,9 @@ import English from "./page/English";
 import Info from "./page/Info";
 import Russian from "./page/Rus";
 import Chine  from "./page/Chine";
+import Map_ru from "./page/Map-ru";
+import Map_Ch from "./page/Map-ch";
+import Map_En from "./page/Map-en";
 
 
 function App() {
@@ -24,6 +27,10 @@ function App() {
       <Route path="/recording-ch" element={<Recording_English />} />
       <Route path="/" element={<Home />} />
       <Route path="/map" element={<Map />} />
+      <Route path="/map-ru" element={<Map_ru />} />
+      <Route path="/map-ch" element={<Map_Ch />} />
+      <Route path="/map-en" element={<Map_En />} />
+
    
 
       <Route path="/info" element={<Info/>} />
