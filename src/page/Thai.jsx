@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../style/index.scss";
 import { Link } from "react-router-dom";
 import Header from "../component/Header-Thai";
-import text from "../assets/image/text/thay/xBOOKThai.svg";
+import text from "../assets/image/text/thay/GenegalThai.svg";
 
 // Основной компонент Thai, который также включает в себя логику изменения размера шрифтов в зависимости от высоты экрана
 const Thai = () => {
@@ -24,16 +24,26 @@ const Thai = () => {
         <div className="custom-footer">
           <div className="custom-info-jobs">
           <div   className="adjustable-text thub"
-                style={{ fontSize: `16px` ,color:"#fff"}}>
-              รับงานกับเรา
+                style={{ fontSize: `18px` ,color:"#fff"}}>
+              ข้อมูล
+
             </div>
           </div>
+          <Link
+            to={"/recording"}
+            className="adjustable-text"
+            style={{ fontSize: `18px` }}
+          >
+            รับงานกับเรา
+
+          </Link>
           <Link
             to={"/map"}
             className="adjustable-text"
             style={{ fontSize: `18px` }}
           >
-            เราอยู่ที่น
+            เราอยู่ที่นี่
+
           </Link>
         </div>
       </div>
