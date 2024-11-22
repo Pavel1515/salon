@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/index.scss";
 import { Link } from "react-router-dom";
-import Header from "../component/Header-En";
+import Header from "../component/Header-Ru";
 import text from "../assets/image/text/thay/BOOK-Thai.svg";
 
 const English = () => {
@@ -9,7 +9,7 @@ const English = () => {
     <>
       <div className="home-thai">
         <Header
-          url={"/english"}
+          url={"/russian"}
           header={"exaggerate-header"}
           image={"exaggerate-img"}
           position={"exaggerate"}

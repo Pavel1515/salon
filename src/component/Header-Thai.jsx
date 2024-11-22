@@ -49,7 +49,7 @@ const Header = ({
 
         <Link
           to={"/recording"}
-          className="book_mb"
+          className="book_mb thub"
           style={{ animationName: bookanime }}
         >
         <p>จองเลยตอนน</p>

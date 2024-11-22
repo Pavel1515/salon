@@ -17,11 +17,9 @@ const Home = () => {
     setSelectedLanguage(language);
     setIsAnimationPlaying(true);
     setTimeout(() => setIsAnimationPlaying(false), 2000);
-
-    // Ожидаем завершения анимации, а затем перенаправляем на нужную страницу
     setTimeout(() => {
       navigate(path);
-    }, 2000); // Задержка в 2000 мс (время зависит от длительности анимации)
+    }, 2000);
   };
 
   return (
@@ -46,7 +44,7 @@ const Home = () => {
             <span className="font_english">
               <button
                 className={`link-button`}
-                onClick={() => handleFlagClick("english", "/")}
+                onClick={() => handleFlagClick("english", "/english")}
               >
                 <img src={english} alt="en" />
               </button>
