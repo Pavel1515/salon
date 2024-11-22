@@ -85,11 +85,14 @@ body::-webkit-scrollbar-thumb {
 }
 .home-thai {
   height: calc(var(--vh, 1vh) * 100);
+  max-height: 100vh; /* Максимальная высота — не превышает высоту экрана */
   font-family: "Krub", serif !important;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden; /* Чтобы убрать прокрутку, если контент превышает высоту */
 }
+
 .custom-content-thai {
   font-weight: 700;
   flex-grow: 1;
