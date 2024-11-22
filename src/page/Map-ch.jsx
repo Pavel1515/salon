@@ -6,7 +6,7 @@ const Map = () => {
   return (
     <>
       <Layout
-        url={"/thai"}
+        url={"/chinese"}
         header={"decreaseHeader"}
         image={" decrease-img"}
         position={"decrease"}
