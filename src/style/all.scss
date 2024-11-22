@@ -93,6 +93,7 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
 }
 .custom-content-thai {
+  height: calc(var(--vh) * 100);
   font-weight: 700;
   flex-grow: 1;
   padding: 10px 22px;
