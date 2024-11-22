@@ -13,7 +13,7 @@ import Chine  from "./page/Chine";
 import Map_ru from "./page/Map-ru";
 import Map_Ch from "./page/Map-ch";
 import Map_En from "./page/Map-en";
-
+import Jobs from "./page/Jobs";
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
       <Route path="/map-ru" element={<Map_ru />} />
       <Route path="/map-ch" element={<Map_Ch />} />
       <Route path="/map-en" element={<Map_En />} />
-
+      <Route path="/jobs" element={<Jobs />} />
    
 
       <Route path="/info" element={<Info/>} />

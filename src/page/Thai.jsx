@@ -30,7 +30,7 @@ const Thai = () => {
             </div>
           </div>
           <Link
-            to={"/recording"}
+            to={"/jobs"}
             className="adjustable-text"
             style={{ fontSize: `18px` }}
           >
