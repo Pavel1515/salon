@@ -18,9 +18,9 @@ const Recording = () => {
         animeFacebook={"facebok"}
         animeInstagram={"instagram"}
       />
-      <div style={{ overflow: "auto" }} className="content">
+      <div style={{ overflow: "auto", paddingBottom: "30px" }} className="content">
         <div
-          style={{ color: "white", fontSize: "18px", padding: "22px" }}
+          style={{ color: "white", fontSize: "20px", padding: "22px" }}
           className="jobs-content thub"
         >
           สวัสดีค่ะ คุณต้องการเป็นส่วน <br />
@@ -90,7 +90,8 @@ const Recording = () => {
 เรายังมีระบบโบนัสอีกด้วย  <br /><br />
 
 เรารอคอยที่จะได้ยินจาก  <br />
-ผู้สมัครที่มีคุณสมบัติเหมาะสม!<br />
+ผู้สมัครที่มีคุณสมบัติเหมาะสม!<br /><br />
+เรารอคอยที่จะได้ยินจากผู้สมัครที่มีคุณสมบัติเหมาะสม!
 
           </div>
         </div>
