@@ -3,6 +3,7 @@ import Home from "./page/Home";
 import Recording from "./page/Recording";
 import Recording_English from "./page/Recording-English";
 import Recording_Russian from "./page/Recording-Ru";
+import Recording_Chine from "./page/Recording-Chine";
 import Map from "./page/Map";
 import Home_taiwan from "./page/Thai";
 import English from "./page/English";
@@ -23,8 +24,8 @@ function App() {
       <Route path="/recording-en" element={<Recording_English />} />
       <Route path="/russian" element={<Russian />} />
       <Route path="/recording-ru" element={<Recording_Russian />} />
-      <Route path="/ch" element={<Chine />} />
-      <Route path="/recording-ch" element={<Recording_English />} />
+      <Route path="/chinese" element={<Chine />} />
+      <Route path="/recording-ch" element={<Recording_Chine />} />
       <Route path="/" element={<Home />} />
       <Route path="/map" element={<Map />} />
       <Route path="/map-ru" element={<Map_ru />} />

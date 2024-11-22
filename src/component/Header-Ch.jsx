@@ -47,7 +47,7 @@ const Header = ({
         </div>
 
         <Link
-          to={"/recording-en"}
+          to={"/recording-ch"}
           className="book_mb arial"
           style={{ animationName: bookanime }}
         >

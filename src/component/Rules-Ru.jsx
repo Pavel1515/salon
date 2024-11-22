@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../style/index.scss";
-import text from "../assets/image/text/ru/BOOKRussian.svg";
+import text from "../assets/image/text/ru/xBOOKRussian.svg";
 
 const Rules = () => {
   return (

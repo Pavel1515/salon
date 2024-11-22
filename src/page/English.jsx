@@ -2,7 +2,7 @@ import React from "react";
 import "../style/index.scss";
 import { Link } from "react-router-dom";
 import Header from "../component/Header-En";
-import text from "../assets/image/text/thay/BOOK-Thai.svg";
+import text from "../assets/image/text/thay/xBOOKThai.svg";
 
 const English = () => {
   return (

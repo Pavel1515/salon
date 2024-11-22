@@ -1,15 +1,15 @@
 import React from "react";
 import "../style/index.scss";
 import { Link } from "react-router-dom";
-import Header from "../component/Header-En";
-import text from "../assets/image/text/thay/BOOK-Thai.svg";
+import Header from "../component/Header-Ch";
+import text from "../assets/image/text/thay/xBOOKThai.svg";
 
 const English = () => {
   return (
     <>
       <div className="home-thai">
         <Header
-          url={"/english"}
+          url={"/recording-ch"}
           header={"exaggerate-header"}
           image={"exaggerate-img"}
           position={"exaggerate"}
@@ -38,7 +38,7 @@ const English = () => {
               </Link>
             </div>
             <Link
-              to={"/map"}
+              to={"/map-ch"}
               className="adjustable-text"
               style={{ fontSize: `18px` }}
             >
