@@ -18,7 +18,7 @@ const Recording = () => {
         animeFacebook={"facebok"}
         animeInstagram={"instagram"}
       />
-      <div style={{ overflow: "auto", paddingBottom: "100px" }} className="content">
+      <div style={{ overflow: "auto", paddingBottom: "100px" }} className="anim  content">
         <div
           style={{ color: "white", fontSize: "20px", padding: "22px" }}
           className="jobs-content thub"
