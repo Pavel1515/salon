@@ -84,6 +84,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
 }
 .home-thai {
+  height: calc(var(--vh, 1vh) * 100);
   font-family: "Krub", serif !important;
   display: flex;
   flex-direction: column;
