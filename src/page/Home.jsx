@@ -1,62 +1,83 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import "../style/index.scss";
 import english from "../assets/image/flags/gb.svg";
 import thai from "../assets/image/flags/th.svg";
 import russian from "../assets/image/flags/ru.svg";
 import chinese from "../assets/image/flags/cn.svg";
-import { Link } from "react-router-dom";
-import Lottie from "lottie-react";
+import { useNavigate } from "react-router-dom";
+import LottiePlayer from "react-lottie-player";
 import opacity from "../assets/opacity.json";
+
 const Home = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(null); // Состояние для выбранного языка
+  const [isAnimationPlaying, setIsAnimationPlaying] = useState(false); // Состояние для запуска анимации
+  const navigate = useNavigate();
+
+  const handleFlagClick = (language, path) => {
+    setSelectedLanguage(language);
+    setIsAnimationPlaying(true);
+    setTimeout(() => setIsAnimationPlaying(false), 2000);
+
+    // Ожидаем завершения анимации, а затем перенаправляем на нужную страницу
+    setTimeout(() => {
+      navigate(path);
+    }, 2000); // Задержка в 2000 мс (время зависит от длительности анимации)
+  };
 
   return (
     <>
       <div className="home">
-        <div style={{width: "100%", height: "50%", maxHeight: "50%"}} className="svg-animation-container" >
-        
-        <Lottie  animationData={opacity} loop={true}    
-        style={{
-          width: "100%",
-          height: "100%",
-        }} 
-        rendererSettings={{
-          preserveAspectRatio: "xMidYMid slice",
-        }}
-        preserveAspectRatio={"none"}
-        />
-
+        <div
+          style={{ width: "100%", height: "50%", maxHeight: "50%" ,display: "flex", justifyContent: "center", alignItems: "center"}}
+          className="svg-animation-container"
+        >
+          <LottiePlayer
+            animationData={opacity}
+            play={isAnimationPlaying}
+            loop={false}
+            style={{
+              width: "100%",
+              height: "100%"
+            }}
+          />
         </div>
-        <div style={{width: "100%", height: "50%"}}  className="container_buttons">
-          <span className={`font_english ${selectedLanguage && selectedLanguage !== 'english' ? 'hidden' : ''}`}>
-
-            <Link className={`link-button`} to="/">
-              <img src={english} alt="en" />
-              </Link>
-         
-          </span>
-          <Link className={`link-button`} to="/thai">
-          <button
-           
-            className={`link-button ${selectedLanguage && selectedLanguage !== 'thai' ? 'hidden' : ''}`}
-          >
-            <img src={thai} alt="th" />
-          </button>
-          </Link>
-          <span className={`font_english ${selectedLanguage && selectedLanguage !== 'russian' ? 'hidden' : ''}`}>
+        <div style={{ width: "100%", height: "50%" }} className="container_buttons">
+          {(!selectedLanguage || selectedLanguage === "english") && (
+            <span className="font_english">
+              <button
+                className={`link-button`}
+                onClick={() => handleFlagClick("english", "/")}
+              >
+                <img src={english} alt="en" />
+              </button>
+            </span>
+          )}
+          {(!selectedLanguage || selectedLanguage === "thai") && (
             <button
-            
               className={`link-button`}
+              onClick={() => handleFlagClick("thai", "/thai")}
             >
-              <img src={russian} alt="ru" />
+              <img src={thai} alt="th" />
             </button>
-          </span>
-          <button
-         
-            className={`link-button ${selectedLanguage && selectedLanguage !== 'chinese' ? 'hidden' : ''}`}
-          >
-            <img src={chinese} alt="china" />
-          </button>
+          )}
+          {(!selectedLanguage || selectedLanguage === "russian") && (
+            <span className="font_english">
+              <button
+                className={`link-button`}
+                onClick={() => handleFlagClick("russian", "/russian")}
+              >
+                <img src={russian} alt="ru" />
+              </button>
+            </span>
+          )}
+          {(!selectedLanguage || selectedLanguage === "chinese") && (
+            <button
+              className={`link-button`}
+              onClick={() => handleFlagClick("chinese", "/chinese")}
+            >
+              <img src={chinese} alt="china" />
+            </button>
+          )}
         </div>
       </div>
     </>
