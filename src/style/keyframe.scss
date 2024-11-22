@@ -1,68 +1,26 @@
 @keyframes decreaseHeader {
-  0% {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgb(152, 99, 124) 60%,
-      rgb(235, 154, 193) 100%
-    );
-    height: 375px;
-  }
-  15% {
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgb(149, 114, 153) 60%,
-      rgb(73, 54, 74) 100%
-    );
-  }
-  25% {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgb(101, 75, 104) 60%,
-      rgb(59, 45, 62) 100%
-    );
-  }
-  50% {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgb(71, 52, 72) 60%,
-      rgb(49, 37, 51) 100%
-    );
-  }
-  75% {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgb(54, 40, 56) 60%,
-      rgb(46, 34, 46) 100%
-    );
-  }
-  85% {
-    background: black;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgb(33, 26, 34) 60%,
-      rgb(20, 15, 20) 100%
-    );
-  }
-  100% {
-    background: black;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgb(0, 0, 0) 60%,
-      rgb(0, 0, 0) 100%
-    );
-    height: 90px;
-  }
+
+  0% { background: linear-gradient(to bottom, #000000, #e08db5);   height: 375px;}
+  5% { background: linear-gradient(to bottom, #000000, #d681aa); }
+  10% { background: linear-gradient(to bottom, #000000, #c9719c); }
+  15% { background: linear-gradient(to bottom, #000000, #bf6591); }
+  20% { background: linear-gradient(to bottom, #000000, #b35783); }
+  25% { background: linear-gradient(to bottom, #000000, #a64c78); }
+  30% { background: linear-gradient(to bottom, #000000, #9c436e); }
+  35% { background: linear-gradient(to bottom, #000000, #8f3862); }
+  40% { background: linear-gradient(to bottom, #000000, #822f57); }
+  45% { background: linear-gradient(to bottom, #000000, #75274d); }
+  50% { background: linear-gradient(to bottom, #000000, #691f43); }
+  55% { background: linear-gradient(to bottom, #000000, #5c1839); }
+  60% { background: linear-gradient(to bottom, #000000, #4f1230); }
+  65% { background: linear-gradient(to bottom, #000000, #420d27); }
+  70% { background: linear-gradient(to bottom, #000000, #36091f); }
+  75% { background: linear-gradient(to bottom, #000000, #290617); }
+  80% { background: linear-gradient(to bottom, #000000, #1c030f); }
+  85% { background: linear-gradient(to bottom, #000000, #0f0108); }
+  90% { background: linear-gradient(to bottom, #000000, #030001); }
+  95% { background: linear-gradient(to bottom, #000000, #000000); }
+  100% { background: linear-gradient(to bottom, #000000, #000000);  height: 90px; }
 }
 @-webkit-keyframes exaggerate-img {
   0% {
@@ -295,71 +253,29 @@
 ////////////////////////////////////////
 
 @keyframes exaggerate-header {
-  0% {
-    background: black;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgb(0, 0, 0) 60%,
-      rgb(0, 0, 0) 100%
-    );
-    height: 90px;
-  }
-  15% {
-    background: black;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgb(33, 26, 34) 60%,
-      rgb(20, 15, 20) 100%
-    );
-  }
-  25% {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgb(54, 40, 56) 60%,
-      rgb(46, 34, 46) 100%
-    );
-  }
-  50% {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgb(71, 52, 72) 60%,
-      rgb(49, 37, 51) 100%
-    );
-  }
-  75% {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgb(101, 75, 104) 60%,
-      rgb(59, 45, 62) 100%
-    );
-  }
-  85% {
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgb(149, 114, 153) 60%,
-      rgb(73, 54, 74) 100%
-    );
-  }
-  100% {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgb(152, 99, 124) 60%,
-      rgb(235, 154, 193) 100%
-    );
-    min-height: 100%;
-    height: 375px;
-  }
+  0% { background: linear-gradient(to bottom, #000000, #000000);     height: 90px;}
+    5% { background: linear-gradient(to bottom, #000000, #030001); }
+    10% { background: linear-gradient(to bottom, #000000, #0f0108); }
+    15% { background: linear-gradient(to bottom, #000000, #1c030f); }
+    20% { background: linear-gradient(to bottom, #000000, #290617); }
+    25% { background: linear-gradient(to bottom, #000000, #36091f); }
+    30% { background: linear-gradient(to bottom, #000000, #420d27); }
+    35% { background: linear-gradient(to bottom, #000000, #4f1230); }
+    40% { background: linear-gradient(to bottom, #000000, #5c1839); }
+    45% { background: linear-gradient(to bottom, #000000, #691f43); }
+    50% { background: linear-gradient(to bottom, #000000, #75274d); }
+    55% { background: linear-gradient(to bottom, #000000, #822f57); }
+    60% { background: linear-gradient(to bottom, #000000, #8f3862); }
+    65% { background: linear-gradient(to bottom, #000000, #9c436e); }
+    70% { background: linear-gradient(to bottom, #000000, #a64c78); }
+    75% { background: linear-gradient(to bottom, #000000, #b35783); }
+    80% { background: linear-gradient(to bottom, #000000, #bf6591); }
+    85% { background: linear-gradient(to bottom, #000000, #c9719c); }
+    90% { background: linear-gradient(to bottom, #000000, #d681aa); }
+    95% { background: linear-gradient(to bottom, #000000, #e08db5); }
+    100% { background: linear-gradient(to bottom, #000000, #e08db5); 
+      min-height: 100%;
+      height: 375px;}
 }
 @keyframes booksanime {
   0% {

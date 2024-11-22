@@ -34,10 +34,11 @@ const Thai = () => {
       const newHeight = window.innerHeight - 375;
       setHeight(newHeight);
 
-      // Логика для обновления размера шрифтов при изменении высоты
-      let baseFontSize = newHeight * 0.04;
-      let minTextFontSize = newHeight * 0.045;
-      let customTextFontSize = newHeight * 0.045;
+      let baseFontSize = Math.min(newHeight * 0.04, 20);
+      let minTextFontSize = Math.min(newHeight * 0.045, 20);
+      let customTextFontSize = Math.min(newHeight * 0.045, 22);
+      console.log(   baseFontSize );
+   
 
       setFontSize({
         base: baseFontSize,
@@ -45,7 +46,6 @@ const Thai = () => {
         customText: customTextFontSize,
       });
     };
-
     window.addEventListener("resize", handleResize);
     handleResize();
     return () => window.removeEventListener("resize", handleResize);
@@ -83,7 +83,7 @@ const Thai = () => {
                   fontSize: `${fontSize.minText}px`,
                 }}
               >
-                ยินดีต้อนรับสู่ KATY beauty!
+                ยินดีต้อนรับสู่ KATY ความงาม !
               </div>
               {/* Текст с начальным размером 15px */}
               <div
@@ -94,8 +94,6 @@ const Thai = () => {
                   fontSize: `${fontSize.minText}px`,
                 }}
               >
-                เราให้บริการที่ดีที่สุด:
-                <br />
                 เราให้บริการที่ดีที่สุด:
                 <br />
                 ทำเล็บมือเล็บเท้าต่อขนตา
@@ -111,29 +109,19 @@ const Thai = () => {
                 เล็บของคุณจะแข็งแรงและมีสุขภาพดี
                 <br />
                 มาสร้างสรรค์ดีไซน์ความงามด้วยกันเถอะ!
+                <br />
+                ด้วยความรัก KATY
               </div>
-              {/* Текст с начальным размером 18px */}
-              <div
-                className="custom-text mt adjustable-text"
-                style={{
-                  whiteSpace: "normal",
-                  wordBreak: "break-word",
-                  fontSize: `${fontSize.minText}px`,
-                }}
-              >
-                ด้วยรัก, KATY
-              </div>
+
+        
             </div>
             <div className="custom-footer">
               <div className="custom-container">
-                <div className="custom-info-jobs">
-                  <Link
-                    to={"/info"}
-                    className="adjustable-text"
-                    style={{ fontSize: `${fontSize.customText}px` }}
-                  >
-                    ข้อมูล
-                  </Link>
+                <div
+                  className="adjustable-text info-button"
+                  style={{ fontSize: `${fontSize.customText}px` }}
+                >
+                  ข้อมูล
                 </div>
                 <div className="custom-info-jobs">
                   <Link

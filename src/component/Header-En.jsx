@@ -16,41 +16,6 @@ const Header = ({
 }) => {
   return (
     <>
-      <header className="pk">
-        <div className="container">
-          <div className="logo">
-            <Link to={"/english"}>
-              <img src={logo} alt="" />
-            </Link>
-          </div>
-          <div className="book-now">
-            <Link to={"/recording-en"}>
-              <p> BOOK</p>
-              <span>now</span>
-            </Link>
-          </div>
-          <div className="link">
-            <a
-              style={{ height: "50px" }}
-              href="https://www.facebook.com/profile.php?id=100089697782103&mibextid=LQQJ4d"
-            >
-              <img src={facebook} alt="" />
-            </a>
-            <a
-              style={{ height: "50px" }}
-              href="https://www.instagram.com/nails_antalya_hurma/?igshid=YmMyMTA2M2Y%3D"
-            >
-              <img src={instagram} alt="" />
-            </a>
-            <a
-              style={{ height: "50px" }}
-              href="https://www.tiktok.com/@kt_nails?_t=8Z1oQBUP2BR&_r=1"
-            >
-              <img src={tiktok} alt="" />
-            </a>
-          </div>
-        </div>
-      </header>
       <nav className="mobile" style={{ animationName: header }}>
         <div className="mobile-container">
           <div className="lie"></div>
@@ -69,13 +34,13 @@ const Header = ({
             <img src={facebook} alt="" />
           </a>
           <a  className="facebook"
-            style={{ animationName: animeInstagram }} href="https://www.instagram.com/nails_antalya_hurma/?igshid=YmMyMTA2M2Y%3D">
+            style={{ animationName: animeInstagram }} href="https://www.instagram.com/katy_beauty_salon_bangkok?igsh=MWUzaHd3YXo4MTJiZA%3D%3D">
             <img src={instagram} alt="instagram" />
           </a>
           <a
             style={{ animationName: animeTiktok }}
             className="tiktok"
-            href="https://www.tiktok.com/@kt_nails?_t=8Z1oQBUP2BR&_r=1"
+            href="https://www.tiktok.com/@katy_beautysalon_bangkok?_t=8rPffmhwWf7&_r=1"
           >
             <img src={tiktok} alt="tiktok" />
           </a>
