@@ -6,7 +6,7 @@ import russian from "../assets/image/flags/ru.svg";
 import chinese from "../assets/image/flags/cn.svg";
 import { useNavigate } from "react-router-dom";
 import LottiePlayer from "react-lottie-player";
-import opacity from "../assets/opacity.json";
+import opacity from "../opacity.json";
 
 const Home = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(null); // Состояние для выбранного языка
@@ -28,12 +28,14 @@ const Home = () => {
     <div className="home">
       <div
         style={{
+          paddingTop: "120px",
           width: "100%",
           height: "50%",
           maxHeight: "50%",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+       
         }}
         className="svg-animation-container"
       >
@@ -44,6 +46,7 @@ const Home = () => {
           style={{
             width: "100%",
             height: "100%",
+            transform: "scale(1.3)",
           }}
         />
       </div>
