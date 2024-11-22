@@ -9,7 +9,7 @@ const Rules = () => {
     <div className="rules-image">
       <img src={text} alt="Kt" />
       <div className="custom-footer ">
-        <a className="arial" href="https://n1177760.alteg.io"> AGREE</a>
+        <a className="arial" href="https://n1325533.alteg.io">同意</a>
       </div>
     </div>
   );

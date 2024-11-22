@@ -51,8 +51,7 @@ const Header = ({
           className="book_mb arial"
           style={{ animationName: bookanime }}
         >
-        <p className="arial">Book
-        <span className="now arial">now</span>
+        <p className="arial">立即预订
         </p>
    
         </Link>

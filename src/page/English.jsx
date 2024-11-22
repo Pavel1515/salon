@@ -24,13 +24,10 @@ const English = () => {
           <div className="custom-footer">
        
             <div className="custom-info-jobs">
-              <Link
-                to={"/info"}
-                className="adjustable-text arial"
-                style={{ fontSize: `16px` }}
-              >
+            <div   className="adjustable-text arial"
+                style={{ fontSize: `16px` ,color:"#fff"}}>
                 Info
-              </Link>
+              </div>
             </div>
             <Link
               to={"/map-en"}

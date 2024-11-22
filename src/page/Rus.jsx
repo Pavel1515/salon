@@ -2,7 +2,7 @@ import React from "react";
 import "../style/index.scss";
 import { Link } from "react-router-dom";
 import Header from "../component/Header-Ru";
-import text from "../assets/image/text/thay/xBOOKThai.svg";
+import text from "../assets/image/text/ru/GenegalRussian.svg";
 
 const English = () => {
   return (
@@ -23,13 +23,10 @@ const English = () => {
           <img src={text} alt="wellcome" />
           <div className="custom-footer">
             <div className="custom-info-jobs">
-              <Link
-                to={"/info"}
-                className="adjustable-text arial"
-                style={{ fontSize: `16px` }}
-              >
+            <div   className="adjustable-text arial"
+                style={{ fontSize: `16px` ,color:"#fff"}}>
                 Информация
-              </Link>
+              </div>
             </div>
             <Link
               to={"/map-ru"}

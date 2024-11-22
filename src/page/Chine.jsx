@@ -2,7 +2,7 @@ import React from "react";
 import "../style/index.scss";
 import { Link } from "react-router-dom";
 import Header from "../component/Header-Ch";
-import text from "../assets/image/text/thay/xBOOKThai.svg";
+import text from "../assets/image/text/ch/GenegalChinese.svg";
 
 const English = () => {
   return (
@@ -22,27 +22,20 @@ const English = () => {
         <div className="custom-content-thai">
           <img src={text} alt="wellcome" />
           <div className="custom-footer">
-            <div
-              className="adjustable-text info-button"
-              style={{ fontSize: `18px` }}
-            >
-              ข้อมูล
-            </div>
+ 
             <div className="custom-info-jobs">
-              <Link
-                to={"/info"}
-                className="adjustable-text"
-                style={{ fontSize: `18px` }}
-              >
-                รับงานกับเรา
-              </Link>
+              <div   className="adjustable-text arial"
+                style={{ fontSize: `16px` ,color:"#fff"}}>
+              我们在这里
+              </div>
+          
             </div>
             <Link
               to={"/map-ch"}
-              className="adjustable-text"
-              style={{ fontSize: `18px` }}
+              className="adjustable-text arial"
+              style={{ fontSize: `16px` }}
             >
-              เราอยู่ที่น
+             信息
             </Link>
           </div>
         </div>
