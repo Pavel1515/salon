@@ -14,6 +14,8 @@ import Map_ru from "./page/Map-ru";
 import Map_Ch from "./page/Map-ch";
 import Map_En from "./page/Map-en";
 import Jobs from "./page/Jobs";
+import Ads from "./page/Ads";
+import Video from "./page/Video";
 
 function App() {
   return (
@@ -32,10 +34,9 @@ function App() {
       <Route path="/map-ch" element={<Map_Ch />} />
       <Route path="/map-en" element={<Map_En />} />
       <Route path="/jobs" element={<Jobs />} />
-   
-
       <Route path="/info" element={<Info/>} />
-
+      <Route path="/ads" element={<Ads/>} />
+      <Route path="/video-ads" element={< Video/>} />
     </Routes>
   );
 }
