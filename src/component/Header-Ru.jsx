@@ -51,7 +51,7 @@ const Header = ({
           className="book_mb arial"
           style={{ animationName: bookanime }}
         >
-        <p className="arial">Book
+        <p className="arial anime_books">Book
         <span className="now arial">now</span>
         </p>
    

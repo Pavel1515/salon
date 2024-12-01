@@ -1,26 +1,69 @@
 @keyframes decreaseHeader {
-
-  0% { background: linear-gradient(to bottom, #000000, #e08db5);   height: 375px;}
-  5% { background: linear-gradient(to bottom, #000000, #d681aa); }
-  10% { background: linear-gradient(to bottom, #000000, #c9719c); }
-  15% { background: linear-gradient(to bottom, #000000, #bf6591); }
-  20% { background: linear-gradient(to bottom, #000000, #b35783); }
-  25% { background: linear-gradient(to bottom, #000000, #a64c78); }
-  30% { background: linear-gradient(to bottom, #000000, #9c436e); }
-  35% { background: linear-gradient(to bottom, #000000, #8f3862); }
-  40% { background: linear-gradient(to bottom, #000000, #822f57); }
-  45% { background: linear-gradient(to bottom, #000000, #75274d); }
-  50% { background: linear-gradient(to bottom, #000000, #691f43); }
-  55% { background: linear-gradient(to bottom, #000000, #5c1839); }
-  60% { background: linear-gradient(to bottom, #000000, #4f1230); }
-  65% { background: linear-gradient(to bottom, #000000, #420d27); }
-  70% { background: linear-gradient(to bottom, #000000, #36091f); }
-  75% { background: linear-gradient(to bottom, #000000, #290617); }
-  80% { background: linear-gradient(to bottom, #000000, #1c030f); }
-  85% { background: linear-gradient(to bottom, #000000, #0f0108); }
-  90% { background: linear-gradient(to bottom, #000000, #030001); }
-  95% { background: linear-gradient(to bottom, #000000, #000000); }
-  100% { background: linear-gradient(to bottom, #000000, #000000);  height: 90px; }
+  0% {
+    background: linear-gradient(to bottom, #000000, #e08db5);
+    height: 375px;
+  }
+  5% {
+    background: linear-gradient(to bottom, #000000, #d681aa);
+  }
+  10% {
+    background: linear-gradient(to bottom, #000000, #c9719c);
+  }
+  15% {
+    background: linear-gradient(to bottom, #000000, #bf6591);
+  }
+  20% {
+    background: linear-gradient(to bottom, #000000, #b35783);
+  }
+  25% {
+    background: linear-gradient(to bottom, #000000, #a64c78);
+  }
+  30% {
+    background: linear-gradient(to bottom, #000000, #9c436e);
+  }
+  35% {
+    background: linear-gradient(to bottom, #000000, #8f3862);
+  }
+  40% {
+    background: linear-gradient(to bottom, #000000, #822f57);
+  }
+  45% {
+    background: linear-gradient(to bottom, #000000, #75274d);
+  }
+  50% {
+    background: linear-gradient(to bottom, #000000, #691f43);
+  }
+  55% {
+    background: linear-gradient(to bottom, #000000, #5c1839);
+  }
+  60% {
+    background: linear-gradient(to bottom, #000000, #4f1230);
+  }
+  65% {
+    background: linear-gradient(to bottom, #000000, #420d27);
+  }
+  70% {
+    background: linear-gradient(to bottom, #000000, #36091f);
+  }
+  75% {
+    background: linear-gradient(to bottom, #000000, #290617);
+  }
+  80% {
+    background: linear-gradient(to bottom, #000000, #1c030f);
+  }
+  85% {
+    background: linear-gradient(to bottom, #000000, #0f0108);
+  }
+  90% {
+    background: linear-gradient(to bottom, #000000, #030001);
+  }
+  95% {
+    background: linear-gradient(to bottom, #000000, #000000);
+  }
+  100% {
+    background: linear-gradient(to bottom, #000000, #000000);
+    height: 90px;
+  }
 }
 @-webkit-keyframes exaggerate-img {
   0% {
@@ -85,7 +128,6 @@
     top: 0;
     left: 20px;
     transform: translateX(0%);
-
   }
   100% {
     position: absolute;
@@ -93,7 +135,6 @@
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-
   }
 }
 
@@ -104,14 +145,12 @@
     top: 0;
     left: 20px;
     transform: translateX(0%);
-
   }
   100% {
     position: absolute;
     top: 37%;
     left: 50%;
     transform: translateX(-50%);
-
   }
 }
 
@@ -195,7 +234,6 @@
   }
 }
 
-
 @keyframes books {
   0% {
     opacity: 1;
@@ -253,29 +291,72 @@
 ////////////////////////////////////////
 
 @keyframes exaggerate-header {
-  0% { background: linear-gradient(to bottom, #000000, #000000);     height: 90px;}
-    5% { background: linear-gradient(to bottom, #000000, #030001); }
-    10% { background: linear-gradient(to bottom, #000000, #0f0108); }
-    15% { background: linear-gradient(to bottom, #000000, #1c030f); }
-    20% { background: linear-gradient(to bottom, #000000, #290617); }
-    25% { background: linear-gradient(to bottom, #000000, #36091f); }
-    30% { background: linear-gradient(to bottom, #000000, #420d27); }
-    35% { background: linear-gradient(to bottom, #000000, #4f1230); }
-    40% { background: linear-gradient(to bottom, #000000, #5c1839); }
-    45% { background: linear-gradient(to bottom, #000000, #691f43); }
-    50% { background: linear-gradient(to bottom, #000000, #75274d); }
-    55% { background: linear-gradient(to bottom, #000000, #822f57); }
-    60% { background: linear-gradient(to bottom, #000000, #8f3862); }
-    65% { background: linear-gradient(to bottom, #000000, #9c436e); }
-    70% { background: linear-gradient(to bottom, #000000, #a64c78); }
-    75% { background: linear-gradient(to bottom, #000000, #b35783); }
-    80% { background: linear-gradient(to bottom, #000000, #bf6591); }
-    85% { background: linear-gradient(to bottom, #000000, #c9719c); }
-    90% { background: linear-gradient(to bottom, #000000, #d681aa); }
-    95% { background: linear-gradient(to bottom, #000000, #e08db5); }
-    100% { background: linear-gradient(to bottom, #000000, #e08db5); 
-      min-height: 100%;
-      height: 375px;}
+  0% {
+    background: linear-gradient(to bottom, #000000, #000000);
+    height: 90px;
+  }
+  5% {
+    background: linear-gradient(to bottom, #000000, #030001);
+  }
+  10% {
+    background: linear-gradient(to bottom, #000000, #0f0108);
+  }
+  15% {
+    background: linear-gradient(to bottom, #000000, #1c030f);
+  }
+  20% {
+    background: linear-gradient(to bottom, #000000, #290617);
+  }
+  25% {
+    background: linear-gradient(to bottom, #000000, #36091f);
+  }
+  30% {
+    background: linear-gradient(to bottom, #000000, #420d27);
+  }
+  35% {
+    background: linear-gradient(to bottom, #000000, #4f1230);
+  }
+  40% {
+    background: linear-gradient(to bottom, #000000, #5c1839);
+  }
+  45% {
+    background: linear-gradient(to bottom, #000000, #691f43);
+  }
+  50% {
+    background: linear-gradient(to bottom, #000000, #75274d);
+  }
+  55% {
+    background: linear-gradient(to bottom, #000000, #822f57);
+  }
+  60% {
+    background: linear-gradient(to bottom, #000000, #8f3862);
+  }
+  65% {
+    background: linear-gradient(to bottom, #000000, #9c436e);
+  }
+  70% {
+    background: linear-gradient(to bottom, #000000, #a64c78);
+  }
+  75% {
+    background: linear-gradient(to bottom, #000000, #b35783);
+  }
+  80% {
+    background: linear-gradient(to bottom, #000000, #bf6591);
+  }
+  85% {
+    background: linear-gradient(to bottom, #000000, #c9719c);
+  }
+  90% {
+    background: linear-gradient(to bottom, #000000, #d681aa);
+  }
+  95% {
+    background: linear-gradient(to bottom, #000000, #e08db5);
+  }
+  100% {
+    background: linear-gradient(to bottom, #000000, #e08db5);
+    min-height: 100%;
+    height: 375px;
+  }
 }
 @keyframes booksanime {
   0% {
@@ -288,6 +369,7 @@
     opacity: 1;
   }
 }
+
 
 @keyframes exaggerate-instagram {
   0% {
@@ -338,7 +420,6 @@
   transition: all 0.5s ease;
 }
 
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -351,30 +432,60 @@
   opacity: 0;
   transition: opacity 2s ease-out;
 }
-.anim{
-  opacity: 0; /* Начальное состояние элемента (невидимый) */
+.anim {
+  opacity: 0; 
   animation: fadeIn 0.5s ease-in forwards;
   animation-delay: 0.25s;
 }
 
+.anime_text_scale_info {
+  opacity: 0;
+  animation: scaleAnimatioTextInfo 0.25s ease-in 0.25s forwards;
+}
+
+@keyframes scaleAnimatioTextInfo {
+  0% {
+    opacity: 0.8;
+    transform: scale(1); 
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5); 
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1); 
+  }
+}
 
 .anime_text_scale {
   opacity: 0;
-  animation: scaleAnimatioText .25s ease-in .25s forwards;
+  animation: scaleAnimatioText 0.25s ease-in 0.8s forwards;
 }
 
 @keyframes scaleAnimatioText {
   0% {
-    opacity: 0.8;
-    transform: scale(1); /* Начальный размер */
-  }
-  50% {
     opacity: 1;
-    transform: scale(1.5); /* Максимальный размер */
+    transform: scale(1.5); 
   }
   100% {
     opacity: 0.8;
-    transform: scale(1); /* Возвращаемся к исходному размеру */
+    transform: scale(1); 
   }
 }
 
+.anime_books{
+  animation: scaleAnimatioTextBook 0.5s linear 0.25s;;
+}
+@keyframes scaleAnimatioTextBook {
+  0% {
+    transform: scale(1); 
+  }
+  50% {
+    text-shadow: 0px -8px 10px rgba(39, 0, 19, 0.25);
+    transform: scale(1.2); 
+  }
+  100% {
+    transform: scale(1); 
+  }
+}

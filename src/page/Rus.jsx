@@ -23,14 +23,14 @@ const English = () => {
           <img src={text} alt="wellcome" />
           <div className="custom-footer">
             <div className="custom-info-jobs">
-            <div   className="adjustable-text arial"
+            <div   className="adjustable-text arial anime_text_scale_info"
                 style={{ fontSize: `16px` ,color:"#fff"}}>
                 Информация
               </div>
             </div>
             <Link
               to={"/map-ru"}
-              className="adjustable-text arial anime_text_scale"
+              className="adjustable-text arial anime_text_scale "
               style={{ fontSize: `16px` }}
             >
            Мы здесь
