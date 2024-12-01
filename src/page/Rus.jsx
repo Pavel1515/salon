@@ -30,7 +30,7 @@ const English = () => {
             </div>
             <Link
               to={"/map-ru"}
-              className="adjustable-text arial"
+              className="adjustable-text arial anime_text_scale"
               style={{ fontSize: `16px` }}
             >
            Мы здесь

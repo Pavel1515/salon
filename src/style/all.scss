@@ -171,3 +171,28 @@ body::-webkit-scrollbar-thumb {
 .arial {
   font-family: Arial, Helvetica, sans-serif !important;
 }
+.text-container {
+  width: 80vw;
+  max-height: calc(100% - 700px);
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.text {
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0;
+  color: #944a71; /* Новый цвет текста */
+}
+
+.left-align {
+  text-align: left;
+}
+
+.empty {
+  height: 20px;
+}

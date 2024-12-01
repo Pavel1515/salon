@@ -356,3 +356,25 @@
   animation: fadeIn 0.5s ease-in forwards;
   animation-delay: 0.25s;
 }
+
+
+.anime_text_scale {
+  opacity: 0;
+  animation: scaleAnimatioText .25s ease-in .25s forwards;
+}
+
+@keyframes scaleAnimatioText {
+  0% {
+    opacity: 0.8;
+    transform: scale(1); /* Начальный размер */
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5); /* Максимальный размер */
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1); /* Возвращаемся к исходному размеру */
+  }
+}
+

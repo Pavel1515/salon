@@ -30,7 +30,7 @@ const Header = ({
           <a
             className="facebook"
             style={{ animationName: animeFacebook }}
-            href="https://www.facebook.com/profile.php?id=100089697782103&mibextid=LQQJ4d"
+            href="https://www.facebook.com/katy.kt.547"
           >
             <img src={facebook} alt="" />
           </a>

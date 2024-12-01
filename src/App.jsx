@@ -16,6 +16,7 @@ import Map_En from "./page/Map-en";
 import Jobs from "./page/Jobs";
 import Ads from "./page/Ads";
 import Video from "./page/Video";
+import Err from './page/Err';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
       <Route path="/info" element={<Info/>} />
       <Route path="/ads" element={<Ads/>} />
       <Route path="/video-ads" element={< Video/>} />
+      <Route path="/eror" element={< Err/>} />
     </Routes>
   );
 }
